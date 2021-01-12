@@ -3,14 +3,13 @@ import {Story} from '@storybook/react/types-6-0';
 
 import {
     TextField,
-    TextFieldProps
+    TextFieldGroupProps
 } from 'src/components/text-field';
 
 const {Group} = TextField;
 
-const Template: Story<TextFieldProps> = ({...props}): JSX.Element => (
+const Template: Story<TextFieldGroupProps> = ({...props}): JSX.Element => (
     <Group compact={true} {...props}>
-        <TextField style={{width: 300}} />
         <TextField style={{width: 300}} />
     </Group>
 );

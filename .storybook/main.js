@@ -17,6 +17,7 @@ module.exports = {
         {
             name: '@storybook/preset-create-react-app',
             options: {
+                // scriptsPackageName: 'react-scripts',
                 craOverrides: {
                     fileLoaderExcludes: ['less']
                 }

@@ -109,7 +109,7 @@ const EditableCell: React.FunctionComponent<EditableCellProps> = ({
     ...restProps
 }) => {
     const [editing, setEditing] = React.useState(false);
-    const inputRef = React.useRef<HTMLInputElement>(null);
+    const inputRef = React.useRef<any>(null);
     const form = React.useContext(EditableContext)!;
 
     React.useEffect(() => {

@@ -3,12 +3,12 @@ import {Story} from '@storybook/react/types-6-0';
 
 import {
     TextField,
-    TextFieldProps
+    TextareaTextFieldProps
 } from 'src/components/text-field';
 
 const {Textarea} = TextField;
 
-const Template: Story<TextFieldProps> = ({...props}): JSX.Element => (
+const Template: Story<TextareaTextFieldProps> = ({...props}): JSX.Element => (
     <Textarea placeholder="Введите текст"
               showCount={true}
               {...props}

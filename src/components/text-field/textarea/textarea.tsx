@@ -1,13 +1,10 @@
 import React from 'react';
-import {TextAreaRef} from 'antd/lib/input/TextArea';
-import AntTextField, {TextAreaProps} from 'antd/lib/input';
-
-type TextareaTextFieldProps = TextAreaProps & React.RefAttributes<TextAreaRef>;
+import AntTextField, {TextAreaProps as TextareaTextFieldProps} from 'antd/lib/input';
 
 const AntTextareaTextField = AntTextField.TextArea;
 const displayName = 'TextField.Textarea';
 
-const TextareaTextField = React.forwardRef<HTMLElement, TextareaTextFieldProps>(({children, ...props}, ref) => (
+const TextareaTextField = React.forwardRef<AntTextField, TextareaTextFieldProps>(({children, ...props}, ref) => (
     <AntTextareaTextField data-test={displayName}
                           ref={ref}
                           {...props}
