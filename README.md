@@ -1,4 +1,4 @@
-# @pushkin/ui-kit
+# UI Kit им. А.С. Пушкина
 
 ## UI Kit
 
