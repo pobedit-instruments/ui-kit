@@ -1,0 +1,40 @@
+import {Meta} from '@storybook/addon-docs/blocks';
+import {Typography} from 'antd';
+
+import {
+    DesignSystem,
+    Structure,
+    Patterns,
+    getStoryTitle
+} from 'src/structure';
+
+export const title = getStoryTitle([
+    Structure.DESIGN_SYSTEM,
+    DesignSystem.PATTERNS,
+    Patterns.INDICATORS
+]);
+
+<Meta title={title} />
+
+<Typography.Title>{Patterns.INDICATORS}</Typography.Title>
+
+Индикаторы выполнения поддерживают диалог с пользователем, когда остальная часть интерфейса недоступна.
+
+Пример спиннера:
+
+<img src="./stories/system/patterns/indicators/spinner.png" width={600} />
+
+<br />
+
+Пример скелетона:
+
+<img src="./stories/system/patterns/indicators/skeleton.png" width={600} />
+
+<br />
+
+Пример с рефрешем (активация по действию):
+
+<img src="./stories/system/patterns/indicators/refresh.png" width={600} />
+
+<br />
+

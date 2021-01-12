@@ -1,0 +1,36 @@
+import {Meta} from '@storybook/addon-docs/blocks';
+import {Typography} from 'antd';
+
+import {
+    DesignSystem,
+    Structure,
+    Patterns,
+    getStoryTitle
+} from 'src/structure';
+
+export const title = getStoryTitle([
+    Structure.DESIGN_SYSTEM,
+    DesignSystem.PATTERNS,
+    Patterns.GROUPING
+]);
+
+<Meta title={title} />
+
+<Typography.Title>{Patterns.GROUPING}</Typography.Title>
+
+Старайтесь отображать информацию как можно более плоско. Не прячьте и не сворачивайте содержимое, если в этом нет необходимости.
+
+<img src="./stories/system/patterns/grouping/basic.png" width={600} />
+
+Чтобы снизить сложность информации на каждой странице, размещайте информацию по уровням и группам, следуя принципу близости.<br />
+Работайте со сложными деталями следующим образом: разделите информацию с высокой сложностью и слабой корреляцией на несколько частей. И разделите детали на группы в соответствии с их относительностью, с вкладками, шагами, карточками и т.д.
+
+<img src="./stories/system/patterns/grouping/detailed.png" width={600} />
+
+Сократите использование сложных структур, попытайтесь брать похожие макеты и модули, чтобы уменьшить влияние структурных различий на пользователей, и позвольте им сосредоточиться на самой информации.
+
+<img src="./stories/system/patterns/grouping/map.png" width={600} />
+
+Сделайте вывод о близости каждого информационного модуля в соответствии с релевантностью среди них. Обычно чем более актуально содержание, тем ближе они друг к другу.
+
+<img src="./stories/system/patterns/grouping/layers.png" width={600} />

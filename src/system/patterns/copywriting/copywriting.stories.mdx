@@ -1,0 +1,163 @@
+import {Meta} from '@storybook/addon-docs/blocks';
+import {Typography} from 'antd';
+
+import {
+    DesignSystem,
+    Structure,
+    Patterns,
+    getStoryTitle
+} from 'src/structure';
+
+export const title = getStoryTitle([
+    Structure.DESIGN_SYSTEM,
+    DesignSystem.PATTERNS,
+    Patterns.COPYWRITING
+]);
+
+<Meta title={title} />
+
+<Typography.Title>{Patterns.COPYWRITING}</Typography.Title>
+
+1. [Язык](#language)
+2. [Тон](#tone)
+3. [Заглавные буквы и знаки препинания](#punctuation)
+
+В интерфейсе нам нужно находить отклик у пользователей через диалог. Точные и ясные слова легче понять, а подходящий тон может вызвать чувство доверия.
+Поэтому в дизайне интерфейса следует серьезно отнестись к копирайтингу.
+
+## Язык <a name="language"></a>
+
+### Смещайте акцент на пользователя
+
+Перенос акцента с описания действий на обращение к пользователю внесет больше ясности и сократит размер текста.
+
+<img src="./stories/system/patterns/copywriting/user.png" width={600} />
+
+<br />
+
+### Важная информация
+
+Размещайте важную информацию на видном месте.
+
+<img src="./stories/system/patterns/copywriting/important.png" width={600} />
+
+<br />
+
+### Избегайте деталей
+
+Опускайте ненужные слова и не повторяйте известные пользователям факты. В большинстве случаев интерфейс не должен описывать все детали.
+Постарайтесь предоставить краткое и доступное содержание.
+
+<img src="./stories/system/patterns/copywriting/action.png" width={600} />
+
+<br />
+
+### Единообразие
+
+Стройте единообразные предложения.
+
+<img src="./stories/system/patterns/copywriting/consistent.png" width={600} />
+
+<br />
+<br />
+
+<img src="./stories/system/patterns/copywriting/popup.png" width={600} />
+
+<br />
+
+### Используйте простые слова
+
+Используйте простые, точные и понятные слова.<br />
+Косвенный, неоднозначный и чрезмерно «усовершенствованный» текст увеличит когнитивную нагрузку на пользователя.
+
+<img src="./stories/system/patterns/copywriting/clear.png" width={600} />
+
+<br />
+
+### Используйте цели
+
+Когда мы хотим, чтобы пользователь совершил действие, мы должны сосредоточиться на том, что пользователь может получить и как он себя чувствует.
+Сообщив пользователям о цели или важности действия, они могут с большей готовностью его выполнить.
+
+<img src="./stories/system/patterns/copywriting/complete.png" width={600} />
+
+<br />
+
+### Ошибки
+
+Когда пользователь допускает ошибку ввода, ваше сообщение об ошибке должно выражаться в простой для понимания форме.
+
+<img src="./stories/system/patterns/copywriting/error.png" width={600} />
+
+<br />
+
+### Точность слов
+
+Используйте слова точно и полностью. Профессиональные термины должны быть точными в соответствии с отраслевыми стандартами.
+
+<img src="./stories/system/patterns/copywriting/number.png" width={600} />
+
+<br />
+
+## Тон <a name="tone"></a>
+
+### Обращение к пользователю
+
+Не обращайтесь к пользователю, используя «мой» и «ваш» в одной фразе.
+
+<img src="./stories/system/patterns/copywriting/my.png" width={600} />
+
+<br />
+
+### Помогайте пользователю
+
+Оказывайте пользователям поддержку и поощрение, а не команды или давление.<br />
+Если вы хотите сохранить своих пользователей, не обвиняйте их, когда что-то идет не так.<br />
+Сосредоточьтесь на решении проблем, а не на обвинении.
+
+<img src="./stories/system/patterns/copywriting/support.png" width={600} />
+
+<br />
+
+### Будьте вежливыми
+
+Не используйте слишком абсолютное выражение, которое доставит неудобство пользователю.
+
+<img src="./stories/system/patterns/copywriting/absolute.png" width={600} />
+
+<br />
+
+## Заглавные буквы и знаки препинания
+
+### Названия и аббревиатуры
+
+При использовании полного названия продукта делайте первые буквы каждого слова заглавными.<br />
+Пишите сокращения названий продуктов заглавными буквами.
+
+<img src="./stories/system/patterns/copywriting/capital.png" width={600} />
+
+<br />
+
+### Заглавные буквы в предложениях <a name="punctuation"></a>
+
+Используйте заглавные буквы в предложениях только в заголовках, пунктах меню, кнопках и т.д.
+
+<img src="./stories/system/patterns/copywriting/sentence.png" width={600} />
+
+<br />
+
+### Арабские цифры
+
+Используйте арабские цифры для количественных значений, потому что пользователи их быстрее прочитают чем слова.
+
+<img src="./stories/system/patterns/copywriting/numbers.png" width={600} />
+
+<br />
+
+### Знаки препинания
+
+Избегайте ненужных знаков препинания в заголовках, легендах и тултипах.
+
+<img src="./stories/system/patterns/copywriting/punctuation.png" width={600} />
+
+<br />

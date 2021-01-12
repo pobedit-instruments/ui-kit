@@ -1,0 +1,54 @@
+import {Meta} from '@storybook/addon-docs/blocks';
+import {Typography} from 'antd';
+
+import {
+    DesignSystem,
+    Structure,
+    Patterns,
+    getStoryTitle
+} from 'src/structure';
+
+export const title = getStoryTitle([
+    Structure.DESIGN_SYSTEM,
+    DesignSystem.PATTERNS,
+    Patterns.CONTRAST
+]);
+
+<Meta title={title} />
+
+<Typography.Title>{Patterns.CONTRAST}</Typography.Title>
+
+Контрастность — один из эффективных способов добавить визуальный интерес к вашей странице и создать организационную иерархию между различными элементами, которая помогает пользователю быстро находить информацию.
+
+## Элементы управления
+
+<img src="./stories/system/patterns/сontrast/сontrast.png" width={600} />
+
+<br />
+
+Обратите внимание, что кнопки, которые не подразумевают принятия решений (Применить, Отказаться и синонимичные им названия) не должны выделяться цветом, так же как и не должно быть больше одной главной кнопки.
+
+<img src="./stories/system/patterns/сontrast/buttons.png" width={600} />
+
+## Типографика
+
+Измененяя цвет размер шрифта мы создаем текстовый ансамбль, который далает страницу более ритмичной.
+
+Пример 1:
+
+<img src="./stories/system/patterns/сontrast/text1.png" width={600} />
+
+Пример 2:
+
+<img src="./stories/system/patterns/сontrast/text2.png" width={600} />
+
+## Состояния
+
+Использование тегов разных цветов:
+
+<img src="./stories/system/patterns/сontrast/static-contrast.png" width={600} />
+
+Изменение фонового состояния по движению мыши:
+
+<img src="./stories/system/patterns/сontrast/dynamic-contrast.png" width={600} />
+

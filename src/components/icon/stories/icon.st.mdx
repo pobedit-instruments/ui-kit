@@ -1,0 +1,27 @@
+import {Meta, ArgsTable, Story, Preview} from '@storybook/addon-docs/blocks';
+import {Button} from '../..';
+import controls, {IconDefaultStory} from '../icon.stories';
+import {ButtonDefaultStory} from '../../button/button/stories/button-default.stories';
+
+import {
+    Structure,
+    BasicElement,
+    Component,
+    getStoryTitle
+} from 'src/structure';
+
+export const title = getStoryTitle([
+    // Structure.COMPONENTS,
+    Component.BASIC_ELEMENTS,
+    BasicElement.ICON
+]);
+
+<Meta title={title} component={Button} argTypes={controls.argTypes} />
+
+<Preview>
+    <Story name="Базовая иконка">
+        {ButtonDefaultStory}
+    </Story>
+</Preview>
+
+<ArgsTable of={Button} />

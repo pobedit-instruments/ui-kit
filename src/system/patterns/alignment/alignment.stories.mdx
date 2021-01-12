@@ -1,0 +1,70 @@
+import {Meta} from '@storybook/addon-docs/blocks';
+import {Typography} from 'antd';
+
+import {
+    DesignSystem,
+    Structure,
+    Patterns,
+    getStoryTitle
+} from 'src/structure';
+
+export const title = getStoryTitle([
+    Structure.DESIGN_SYSTEM,
+    DesignSystem.PATTERNS,
+    Patterns.ALIGNMENT
+]);
+
+<Meta title={title} />
+
+<Typography.Title>{Patterns.ALIGNMENT}</Typography.Title>
+
+<br />
+
+1. [Выравнивание текста](#text-alignment)
+2. [Выравнивание форм](#form-alignment)
+3. [Выравнивание чисел](#numbers-alignment)
+4. [Выравнивание табличных данных](#text-table)
+
+<br />
+
+Во втором законе непрерывности в гештальт-психологии, говорится, что в процессе восприятия люди обычно склонны понимать объект так, как он сначала воспринимается, позволяя прямым линиям быть прямыми, а кривым - кривыми. <br />
+В дизайне интерфейса выравнивание элементов соответствует восприятию пользователей и делает информацию более доступной для понимания.
+
+## Выравнивание текста <a name="text-alignment"></a>
+
+Если абзацы или длина слов слишком короткие или слишком свободные, тогда необходима единая визуальная отправная точка.
+
+<img src="./stories/system/patterns/alignment/text-alignment.png" width={600} />
+
+## Выравнивание чисел <a name="numbers-alignment"></a>
+
+Чтобы быстрее сравнивать числа, мы также предлагаем выровнивать их по правому краю.
+
+<img src="./stories/system/patterns/alignment/numbers-alignment.png" width={600} />
+
+## Выравнивание форм <a name="text-alignment"></a>
+
+С помощью обычного двоеточия и выравнивая текста по правому краю пользователи легче отделяют описание и контентную часть.
+
+<img src="./stories/system/patterns/alignment/form-alignment.png" width={600} />
+
+## Выравнивание табличных данных <a name="text-table"></a>
+
+Используйте следующие правила:
+
+1. Числовые данные выравниваются по правой стороне.
+2. Текстовые данные выравниваются по левой стороне.
+3. Заголовки выравниваются в соответствии с данными.
+4. Выравнивание по центру не используется.
+
+Хороший пример:
+
+<img src="./stories/system/patterns/alignment/table-good.png" width={600} />
+
+Плохой пример:
+
+<img src="./stories/system/patterns/alignment/table-bad.png" width={600} />
+
+Интерактивный [пример](https://www.darkhorseanalytics.com/blog/clear-off-the-table/) по работе с табличными данными:
+
+<img src="./stories/system/patterns/alignment/table.gif" width={600} />

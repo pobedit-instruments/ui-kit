@@ -1,0 +1,120 @@
+import {Meta} from '@storybook/addon-docs/blocks';
+import {Typography} from 'antd';
+
+import {ColorSchema} from './colors';
+import {Palette} from './palette';
+import {PaletteGenerator} from './generator';
+
+import {
+    DesignSystem,
+    Structure,
+    Stylistics,
+    getStoryTitle
+} from 'src/structure';
+
+export const title = getStoryTitle([
+    Structure.DESIGN_SYSTEM,
+    DesignSystem.STYLISTICS,
+    Stylistics.COLORS
+]);
+
+<Meta title={title} />
+
+<Typography.Title>{Stylistics.COLORS}</Typography.Title>
+
+<br />
+
+1. [Цветовая модель](#hsv)
+2. [Системный уровень](#system-level)
+    * [Палитра нейтральных цветов](#neutral-palette)
+3. [Продуктовый уровень](#product-level)
+    * [Брендированный цвет](#brand-color)
+    * [Функциональный цвет](#functional-color)
+    * [Нейтральный цвет](#neutral-color)
+4. [Програмное использование](#usage)
+
+## Цветовая модель <a name="hsv"></a>
+
+<img src="./stories/system/stylistics/colors/hsv.png" width={400} />
+
+Мы предпочитаем использовать цветовую модель HSV (HSB), которая помогает дизайнерам иметь четкое психологическое представление о цвете при разработке собственных палитр, а также облегчает общение в командах.
+
+## Системный уровень <a name="system-level"></a>
+
+На системном уровне определена цветовая палитра компонентов, которая состоит их 12 оттенков.
+
+<Palette />
+
+Тем не менее, вы можете определить собственную цветовую палитру. О том как это сделать — читайте ниже.
+
+### Палитра нейтральных цветов <a name="neutral-palette"></a>
+
+Когда возникает необходимость в дополнительном цветовом оформлении, дизайнеры просто определяют основные цвета в соответствии с определенными правилами и автоматически получают полный диапазон производных цветов. <br />
+Подобрать нужный цвета поможет [инструмент](https://www.npmjs.com/package/@ant-design/colors) генерации естественные вариации цветовых оттенков.
+
+<PaletteGenerator />
+
+## Продуктовый уровень <a name="product-level"></a>
+
+На продуктовом уровне задаются функциональные цвета, специфичные для конкретного продукта. Для определения цветовой схемы на этом уровне мы придерживаемся принципа 2x2 — 2 темы и 2 основных цвета.
+
+<br />
+
+<ColorSchema />
+
+### Брендированный цвет <a name="brand-color"></a>
+
+Цвет бренда - один из наиболее интуитивно понятных визуальных элементов, используемых для воплощения характеристик продукта и передачи идей.<br />
+При выборе цветов важно понимать, как цвет бренда используется в пользовательском интерфейсе. В базовой цветовой палитре для выбора основного цвета мы рекомендуем выбрать цветовую палитру из неглубокой глубины шестого цвета.
+
+<img src="./stories/system/stylistics/colors/brand.png" width={400} />
+
+<br />
+<br />
+
+### Функциональный цвет <a name="functional-color"></a>
+
+Функциональный цвет используется в компонентах, которые призваны привлечь внимание, например: теги, информеры, информационные строки и пр.
+
+<img src="./stories/system/stylistics/colors/functional.png" width={400} />
+
+<br />
+<br />
+
+### Нейтральный цвет <a name="neutral-color"></a>
+
+Нейтральный цвет в основном используется в текстовой части интерфейса, в границах, разделительных линиях, а также служит дополнением к фону.<br />
+При определении нейтрального цвета необходимо учитывать разницу между темным и светлым фоном с учетом стандарта WCAG 2.0:
+
+<img src="./stories/system/stylistics/colors/neutral.png" width={400} />
+
+## Програмное использование <a name="usage"></a>
+
+**Установите зависимость**
+
+```
+yarn add -D @ant-design/colors
+```
+
+**Less**
+
+```less
+@import '~antd/lib/style/themes/default.less';
+
+.selector {
+  color: @blue-5;
+}
+```
+
+Обратите внимание, что названия переменных берутся из [Ant'a](https://github.com/ant-design/ant-design/blob/5ab2783ff00d4b1da04bb213c6b12de43e7649eb/components/style/color/colors.less) и если вы хотите собственную цветовую палитру, то старайтесь использовать переопределение уже существующих переменных с использованием того же алгоритма вычисления цветовых оттенков.
+
+**JavaScript**
+
+```js
+import {blue} from '@ant-design/colors';
+
+console.log(blue); // ['#E6F7FF', '#BAE7FF', '#91D5FF', '#69C0FF', '#40A9FF', '#1890FF', '#096DD9', '#0050B3', '#003A8C', '#002766']
+console.log(blue.primary); // '#1890FF'
+````
+
+Более развернутую информацию о пакете `@ant-design/colors` смотрите на [ресурсе](https://www.npmjs.com/package/@ant-design/colors), где публикуется этот пакет.

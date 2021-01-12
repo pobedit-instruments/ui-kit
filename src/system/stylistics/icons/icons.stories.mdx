@@ -1,0 +1,115 @@
+import {Meta} from '@storybook/addon-docs/blocks';
+import {Typography} from 'antd';
+
+import {
+    DesignSystem,
+    Structure,
+    Stylistics,
+    getStoryTitle
+} from 'src/structure';
+
+export const title = getStoryTitle([
+    Structure.DESIGN_SYSTEM,
+    DesignSystem.STYLISTICS,
+    Stylistics.ICONS
+]);
+
+<Meta title={title} />
+
+<Typography.Title>{Stylistics.ICONS}</Typography.Title>
+
+<br />
+
+1. [Системные иконки](#system-list)
+    * [Контурные линии](#contour-lines)
+    * [Толщина обводки](#stroke-weight)
+    * [Углы](#corners)
+    * [Визуальная коррекция](#correction)
+    * [Перспектива](#perspective)
+    * [Размеры](#system-sizing)
+1. [Бизнес-иконки](#system-list)
+    * [Размеры](#business-sizing)
+    * [Цвета](#business-color)
+
+<br />
+
+Иконки могут использоваться для обозначения действий, состояния и даже для категоризации данных. <br />
+Наши иконки соответствуют следующим двум принципам и предназначены для обеспечения согласованности между платформами:
+
+* Четкая, интуитивно понятная и простая графика лучше распознается и легче понимается.
+* Все значки в пользовательском интерфейсе должны быть согласованы по стилю (детализация, перспектива, толщина линий и т.д.)
+
+## Системные иконки <a name="system-list"></a>
+
+Системные иконки часто используются для обозначения часто используемых операций, таких как: сохранение, редактирование и удаление. <br />
+Также в основной набор иконок мы включили обозначение типов и состояний файлов.
+
+<br />
+<br />
+
+<img src="./stories/system/stylistics/icons/system.png" width={500} />
+
+<br />
+<br />
+
+### Контурные линии <a name="contour-lines"></a>
+
+Контурные линии играют важную роль в создании различных иконок с одинаковым визуальным эффектом.<br />
+Пожалуйста, делайте все значки в разрешении 1024 × 1024.
+
+<br />
+
+<img src="./stories/system/stylistics/icons/contour-lines.png" width={500} />
+
+<br />
+<br />
+
+<img src="./stories/system/stylistics/icons/contours.png" width={500} />
+
+### Толщина обводки <a name="stroke-weight"></a>
+
+Постоянная толщина обводки — ключ к поддержанию визуального единства всей системы иконок. Все наши иконки имеют одинаковую ширину линии 72px.
+
+<img src="./stories/system/stylistics/icons/stroke-weight.png" width={500} />
+
+### Углы <a name="corners"></a>
+
+Последовательное скругление углов и определение их размеров также являются важным элементом сохранения визуального единства, поэтому иконки должны иметь закругленные углы и края с тем же радиусом 72px.
+
+<img src="./stories/system/stylistics/icons/corners.png" width={500} />
+
+### Визуальная коррекция <a name="correction"></a>
+
+В некоторых особых случаях (например, когда иконка слишком компактная) для повышения удобочитаемости могут быть внесены изменения в ширину линии, контуры или другие незначительные изменения.
+
+<img src="./stories/system/stylistics/icons/correction.png" width={500} />
+
+### Перспектива <a name="perspective"></a>
+
+Всегда придерживайтесь простого, плоского стиля. Иконки не должны иметь ощущение глубины или большого количества деталей.
+
+<img src="./stories/system/stylistics/icons/perspective.png" width={500} />
+
+### Размеры <a name="business-sizing"></a>
+
+Иконки должны масштабироваться в соответствии с размером текста. Например, иконки, встроенные шрифтом 12pt, должны иметь размер 12px с интервалом 8px.
+
+<img src="./stories/system/stylistics/icons/system-sizing.png" width={500} />
+
+## Бизнес-иконки <a name="business"></a>
+
+Бизнес-иконки, в отличие от системных, сами по себе не имеют функциональных операций, а скорее являются абстракцией, которая помогает копирайтингу. <br />
+
+<img src="./stories/system/stylistics/icons/business.png" width={500} />
+
+### Размеры <a name="business"></a>
+
+При обычном использовании есть три варианта: 32px (минимальный размер), 48px и 64px (максимальный размер).
+
+<img src="./stories/system/stylistics/icons/business-sizing.png" width={500} />
+
+### Цвет <a name="business-color"></a>
+
+Есть два вида бизнес-иконок: одноцветный (нейтральный цвет) и двухцветный (нейтральный цвет + основной цвет), площадь основного цвета не должна превышать 40% от всей иконки.
+
+<img src="./stories/system/stylistics/icons/business-color.png" width={500} />

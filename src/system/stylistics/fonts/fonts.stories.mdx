@@ -1,0 +1,105 @@
+import {Meta} from '@storybook/addon-docs/blocks';
+import {Typography} from 'antd';
+
+import {
+    DesignSystem,
+    Structure,
+    Stylistics,
+    getStoryTitle
+} from 'src/structure';
+
+import {
+    TypographicScale,
+    FontWeight
+} from './fonts';
+
+export const title = getStoryTitle([
+    Structure.DESIGN_SYSTEM,
+    DesignSystem.STYLISTICS,
+    Stylistics.FONTS
+]);
+
+<Meta title={title} />
+
+<Typography.Title>{Stylistics.FONTS}</Typography.Title>
+
+<br />
+
+1. [Семейство шрифтов](#font-family)
+2. [Размер шрифта](#font-size)
+3. [Высота строки](#line-height)
+3. [Вертикальный ритм](#vertical-rhytm)
+4. [Толщина шрифта](#font-weight)
+5. [Цвет шрифта](#font-color)
+
+<br />
+
+Система шрифтов - одна из основополагающих частей любого дизайна интерфейса.
+
+Текст - это основной канал, по которому пользователи могут понять содержимое приложения и завершить свою работу, а хорошо продуманная система шрифтов значительно повышает удобство чтения и эффективность работы пользователя.
+Наша типографская система основана на принципе «динамического порядка» и законе натурального логарифма.
+
+## Семейство шрифтов <a name="font-family"></a>
+
+Для [совместимости](https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/) с системами конечных пользователей мы используем несколько шрифтов применяющихся в порядке приоритета:
+
+```css
+@font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+              'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+              'Noto Color Emoji';
+```
+
+## Размер шрифта <a name="font-size"></a>
+
+<img src="./stories/system/stylistics/fonts/font-size.png" width={500} />
+
+Для удобства чтения за компьютером под оптимальным углом зрения, мы определи, что размер шрифта должен быть не менее 14px.
+
+<br />
+
+## Высота строки <a name="line-height"></a>
+
+<img src="./stories/system/stylistics/fonts/line-height.png" width={480} />
+
+Для определения оптимальной высота строки и размера шрифта мы используем шкалу пентатоники со следующими правилами:
+
+* Основной размер шрифта 14px (1rem).
+* Заголовки начинаются с 26px.
+* Значения задаются только в четных числах.
+* Разница между размером шрифта и высотой строки составляет 8 единиц.
+
+<img src="./stories/system/stylistics/fonts/font-scale.png" width={800} />
+
+<br />
+<br />
+
+## Вертикальный ритм <a name="vertical-rhytm"></a>
+
+Используйте компоненты `Typography`, `Grid (Row / Col)` и `Layout` для управления [вертикальным ритмом](https://zellwk.com/blog/why-vertical-rhythms/).
+
+<TypographicScale />
+
+Для поддержания [вертикального выравнивания](https://www.fonts.com/content/learning/fontology/level-3/numbers/proportional-vs-tabular-figures) в цифрах мы используем CSS-правило `font-variant-numeric: tabular-nums`:
+
+<br />
+
+<img src="./stories/system/stylistics/fonts/tabular-fonts.gif" />
+
+<br />
+<br />
+
+## Толщина шрифта <a name="font-weight"></a>
+
+<br />
+
+<FontWeight />
+
+В большинстве случаев для оптимального масштабирование текста достаточно всего трех значений: 400, 500 и 600.
+
+<br />
+
+## Цвет шрифта <a name="font-color"></a>
+
+Чтобы создать безбарьерный дизайн, мы следуем стандарту WCAG, который поддерживает уровень контрастности AAA, то есть 7:1 или более между основным текстом, заголовком и цветом фона.
+
+<img src="./stories/system/stylistics/colors/neutral.png" width={500} />

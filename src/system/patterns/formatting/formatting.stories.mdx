@@ -1,0 +1,74 @@
+import {Meta} from '@storybook/addon-docs/blocks';
+import {Typography, Table} from 'antd';
+
+import {
+    DesignSystem,
+    Structure,
+    Patterns,
+    getStoryTitle
+} from 'src/structure';
+
+import {DataFormatTable} from './formatting';
+
+export const title = getStoryTitle([
+    Structure.DESIGN_SYSTEM,
+    DesignSystem.PATTERNS,
+    Patterns.FORMATTING
+]);
+
+<Meta title={title} />
+
+<Typography.Title>{Patterns.FORMATTING}</Typography.Title>
+
+Пример различных форматов данных:
+
+<DataFormatTable />
+
+<br />
+
+Чтобы упростить работу с форматами данных используйте стандартные средства локализации: Intl.NumberFormat, Intl.DateTimeFormat и String.prototype.toLocaleString.
+
+Пример с килограммами:
+
+```ts
+const locale = new Intl.NumberFormat('ru-RU', {
+   style: 'unit',
+   unit: 'kilogram'
+});
+
+locale.format(1000000); // 1 000 000 kg
+```
+
+Пример с валютой:
+
+```ts
+const locale = new Intl.NumberFormat('ru-RU', {
+   style: 'currency',
+   currency: 'RUB'
+});
+
+locale.format(1000000); // 1 000 000 руб.
+```
+
+Пример с метрами в секунду:
+
+```ts
+const locale = new Intl.NumberFormat('ru-RU', {
+   style: 'unit',
+   unit: 'meter-per-second'
+});
+
+locale.format(1000000); // 1000,000,000 м/с.
+```
+
+Пример с метрами в секунду:
+
+```ts
+const date = new Date();
+const locale = new Intl.DateTimeFormat('ru-RU');
+
+locale.format(date); // 08.11.2020
+```
+
+В настоящее время этот [стандарт](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat) имплементирован во всех основных браузерах, но его [расширенная](https://github.com/tc39/proposal-unified-intl-numberformat) версия доступа только в [Chrome](https://v8.dev/features/intl-numberformat) и ему подобных, поэтому используйте [полифил](https://www.npmjs.com/package/@formatjs/intl-numberformat).
+

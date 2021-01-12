@@ -1,0 +1,63 @@
+import {Meta} from '@storybook/addon-docs/blocks';
+import {Typography} from 'antd';
+
+import {
+    DesignSystem,
+    Structure,
+    Patterns,
+    getStoryTitle
+} from 'src/structure';
+
+export const title = getStoryTitle([
+    Structure.DESIGN_SYSTEM,
+    DesignSystem.PATTERNS,
+    Patterns.TRANSITION
+]);
+
+<Meta title={title} />
+
+<Typography.Title>{Patterns.TRANSITION}</Typography.Title>
+
+Анимационные переходы сглаживают беспокойный мир интернета, делая изменения более естественными.
+
+Пример создания иллюзии виртуального пространства при переходах:
+
+<video width="600" height="300" controls="controls" loop>
+    <source src="./stories/system/patterns/transition/slide.mp4" type="video/mp4" />
+</video>
+
+Пример с каруселью:
+
+<video width="600" height="300" controls="controls" loop>
+    <source src="./stories/system/patterns/transition/carusel.mp4" type="video/mp4" />
+</video>
+
+Пример с аккордионом:
+
+<video width="600" height="300" controls="controls" loop>
+    <source src="./stories/system/patterns/transition/accordion.mp4" type="video/mp4" />
+</video>
+
+Пример добавления элементов в таблицу:
+
+<video width="600" height="300" controls="controls" loop>
+    <source src="./stories/system/patterns/transition/adding.mp4" type="video/mp4" />
+</video>
+
+Пример удаления элементов в таблице:
+
+<video width="600" height="300" controls="controls" loop>
+    <source src="./stories/system/patterns/transition/deleting.mp4" type="video/mp4" />
+</video>
+
+Пример изменения элементов в таблице:
+
+<video width="600" height="300" controls="controls" loop>
+    <source src="./stories/system/patterns/transition/deleting.mp4" type="video/mp4" />
+</video>
+
+Пример вызова модальных окон:
+
+<video width="600" height="300" controls="controls" loop>
+    <source src="./stories/system/patterns/transition/modals.mp4" type="video/mp4" />
+</video>

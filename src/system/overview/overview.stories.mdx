@@ -1,0 +1,61 @@
+import {Meta} from '@storybook/addon-docs/blocks';
+import {Typography} from 'antd';
+import './overview.less';
+
+import {
+    DesignSystem,
+    Structure,
+    getStoryTitle
+} from 'src/structure';
+
+export const title = getStoryTitle([
+    Structure.DESIGN_SYSTEM,
+    DesignSystem.OVERVIEW
+]);
+
+<Meta title={title} />
+
+<Typography.Title>{DesignSystem.OVERVIEW}</Typography.Title>
+
+<br />
+<br />
+
+<img src="./stories/system/overview/header.png" />
+
+С этим набор компонентов, жизнь разработчика станет чуть длиннее.
+
+## Установка
+
+```
+yarn add -D @pushkin/ui-kit
+```
+
+## Пример использования
+
+```tsx
+import React from 'react';
+import {render} from 'react-dom';
+import {DatePicker} from '@pushkin/ui-kit';
+
+const App = () => {
+    const handleChange = (value: string) => {
+      console.log(value);
+    };
+
+    return <DatePicker onChange={handleChange} />;
+};
+
+render(<App />, document.getElementById('root'));
+```
+
+## Тесты
+
+```
+npm test
+```
+
+## Публикация
+
+```
+npm publish --access public --verbose
+```

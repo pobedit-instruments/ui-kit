@@ -1,0 +1,54 @@
+import {Meta} from '@storybook/addon-docs/blocks';
+import {Typography} from 'antd';
+
+import {
+    DesignSystem,
+    Structure,
+    Stylistics,
+    getStoryTitle
+} from 'src/structure';
+
+export const title = getStoryTitle([
+    Structure.DESIGN_SYSTEM,
+    DesignSystem.STYLISTICS,
+    Stylistics.LAYOUT
+]);
+
+<Meta title={title} />
+
+<Typography.Title>{Stylistics.LAYOUT}</Typography.Title>
+
+<br />
+
+1. [Сетка](#grid)
+2. [Пространственный интервал](#spacing)
+
+<br />
+
+Пространственная планировка — это отправная точка системности при проектировании макетов графических интерфейсов.
+
+В отличие от традиционного графического дизайна пространство макета пользовательского интерфейса должно основываться на динамической и системной перспективе.
+Поэтому в основе нашей системы лежат принципы «красоты порядка» архитектурной этики Ле Корбюзье, что позволяет дизайнерам создавать пространственные макеты, которые сосуществуют на одном поле с рациональной красотой.
+
+## Сетка <a name="grid"></a>
+
+Сетка представляет собой набор пересекающийся горизонтальных и вертикальных линий — один набор определяет столбцы, а другой строки. <br />
+
+<img src="./stories/system/stylistics/layout/grid.png" width={600} />
+
+Чтобы помочь разработчикам макетов эффективнее принимать решения мы установили для всех используемых чисел кратность 8, а размерность сетки ограничили 24 колонками. Это позволяет нам более точно вычислять пропорции и сохранять вертикальный ритм не только в текстовом наполнении, но и в блочном.
+
+## Пространственный интервал <a name="spacing"></a>
+
+У нас есть три формата: 8px (малый интервал), 16px (средний интервал) и 24px (большой интервал).
+
+<img src="./stories/system/stylistics/layout/spacing.png" width={590} />
+
+Пример с чекбоксами:
+
+<img src="./stories/system/stylistics/layout/checkbox.png" width={600} />
+
+## Почитать
+
+[CSS Grid Layout](https://www.w3.org/TR/css-grid-1/)
+[CSS Flexible Box Layout Module](https://www.w3.org/TR/css-flexbox-1/)

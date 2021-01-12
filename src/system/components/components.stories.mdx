@@ -1,0 +1,21 @@
+import {Meta} from '@storybook/addon-docs/blocks';
+import {Typography} from 'antd';
+
+import {
+    Structure,
+    DesignSystem,
+    getStoryTitle
+} from 'src/structure';
+
+import {Components} from './components';
+
+export const title = getStoryTitle([
+    Structure.DESIGN_SYSTEM,
+    DesignSystem.COMPONENTS
+]);
+
+<Meta title={title} />
+
+<Typography.Title>{DesignSystem.COMPONENTS}</Typography.Title>
+
+<Components />
