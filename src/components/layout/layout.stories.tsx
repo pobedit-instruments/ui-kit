@@ -28,7 +28,6 @@ import {ComponentTable} from 'src/utils/args-table';
 
 import {dataSource as siderArgs} from './sider/stories/sider-table';
 import {dataSource as layoutArgs} from './layout/strories/layout-properties';
-import {LayoutStory} from './layout/strories/layout-default.stories';
 
 const controls: Meta<LayoutProps> = {
     title: getStoryTitle([

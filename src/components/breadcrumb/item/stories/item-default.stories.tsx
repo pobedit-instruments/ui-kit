@@ -22,7 +22,7 @@ const OverlayMenu = (): JSX.Element => {
     return (
         <Menu>
             <Item>
-                <a href="/"
+                <a href="#noop"
                    onClick={linkTo(`${Component.BASIC_ELEMENTS}/${BasicElement.BUTTON}`)}
                 >
                     Кнопка
@@ -30,7 +30,7 @@ const OverlayMenu = (): JSX.Element => {
             </Item>
 
             <Item>
-                <a href="/"
+                <a href="#noop"
                    onClick={linkTo(`${Component.BASIC_ELEMENTS}/${BasicElement.ICON}`)}
                 >
                     Иконки
@@ -38,7 +38,7 @@ const OverlayMenu = (): JSX.Element => {
             </Item>
 
             <Item>
-                <a href="/"
+                <a href="#noop"
                    onClick={linkTo(`${Component.BASIC_ELEMENTS}/${BasicElement.TYPOGRAPHY}`)}
                 >
                     Типографика
@@ -56,11 +56,11 @@ const Template: Story<BreadcrumbProps> = ({...props}): JSX.Element => {
             <Item>Главная</Item>
 
             <Item>
-                <a href="/" onClick={preventClick}>Раздел</a>
+                <a href="#noop" onClick={preventClick}>Раздел</a>
             </Item>
 
             <Item overlay={OverlayMenu}>
-                <a href="">Выбор раздела</a>
+                <a href="#noop">Выбор раздела</a>
             </Item>
 
             <Item>Текст</Item>
@@ -82,15 +82,15 @@ BreadcrumbStory.parameters = {
                     return (
                         <Menu>
                             <Item>
-                                <a href="/">Кнопка</a>
+                                <a href="#noop">Кнопка</a>
                             </Item>
 
                             <Item>
-                                <a href="/">Иконки</a>
+                                <a href="#noop">Иконки</a>
                             </Item>
 
                             <Item>
-                                <a href="/">Типографика</a>
+                                <a href="#noop">Типографика</a>
                             </Item>
                         </Menu>
                     );
@@ -104,11 +104,11 @@ BreadcrumbStory.parameters = {
                             <Item>Главная</Item>
 
                             <Item>
-                                <a href="/">Компоненты</a>
+                                <a href="#noop">Компоненты</a>
                             </Item>
 
                             <Item overlay={OverlayMenu}>
-                                <a href="">Базовые элементы</a>
+                                <a href="#noop">Базовые элементы</a>
                             </Item>
 
                             <Item>Кнопка</Item>

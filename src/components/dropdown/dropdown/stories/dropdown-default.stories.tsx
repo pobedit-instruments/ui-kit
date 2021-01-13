@@ -37,7 +37,7 @@ const OverlayMenu = (): JSX.Element => {
 
 const Template: Story<DropdownProps> = ({...props}): JSX.Element => (
     <Dropdown {...props} overlay={OverlayMenu}>
-        <a>
+        <a href="#noop">
             Наведи <DownOutlined />
         </a>
     </Dropdown>

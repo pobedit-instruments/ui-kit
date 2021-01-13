@@ -58,7 +58,7 @@ const columns: ColumnsType<User> = [
         title: 'Имя',
         dataIndex: 'name',
         key: 'name',
-        render: (text: string) => <a href="#">{text}</a>
+        render: (text: string) => <a href="#noop">{text}</a>
     },
     {
         title: 'Возраст',

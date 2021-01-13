@@ -23,8 +23,7 @@ import {
     getStoryTitle
 } from 'src/structure';
 
-import {ComponentTable} from 'src/utils/args-table';
-
+// import {ComponentTable} from 'src/utils/args-table';
 // import {dataSource as DropdownArgs} from '../stories/dropdown-properties';
 // import {dataSource as ButtonArgs} from '../../button/stories/button-properties';
 

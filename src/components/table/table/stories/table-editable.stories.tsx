@@ -167,7 +167,6 @@ const EditableCell: React.FunctionComponent<EditableCellProps> = ({
                 </div>
             );
         }
-
     }
 
     return <td {...restProps}>{childNode}</td>;

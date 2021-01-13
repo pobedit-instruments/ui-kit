@@ -11,9 +11,6 @@ import {
     CouponState
 } from 'src/components/coupon';
 
-const {Group} = Button;
-const {NOT_FOUND} = CouponState;
-
 const defaultProps: Record<string, CouponProps> = {
     [CouponState.SUCCESS]: {
         status: 'success',

@@ -1,8 +1,8 @@
-import React, {ComponentProps} from 'react';
-import AntdIcon, {CustomIconComponentProps, IconBaseProps} from '@ant-design/icons/lib/components/Icon';
+import React from 'react';
+import AntdIcon from '@ant-design/icons/lib/components/Icon';
 
 // @todo https://github.com/ant-design/ant-design/issues/27735
-type Props = ComponentProps<typeof AntdIcon> & {
+type Props = React.ComponentProps<typeof AntdIcon> & {
     component?: any;
 };
 

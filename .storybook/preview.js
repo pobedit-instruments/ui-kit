@@ -1,6 +1,5 @@
-// import React from 'react';
 import {themes} from '@storybook/theming';
-import 'antd/dist/antd.css';
+import '../src/components/index.less';
 
 import {
     DesignSystem,

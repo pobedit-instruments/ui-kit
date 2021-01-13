@@ -6,10 +6,7 @@ import {
     UserOutlined,
 } from '@ant-design/icons';
 
-import {
-    Menu,
-    Tooltip
-} from 'antd';
+import {Tooltip} from 'antd';
 
 import dedent from 'ts-dedent';
 

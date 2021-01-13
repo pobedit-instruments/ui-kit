@@ -14,8 +14,6 @@ import {
     ColumnsType
 } from 'src/components/table';
 
-import style from './table-editable.stories.less';
-
 type User = {
     key: number;
     name: string;

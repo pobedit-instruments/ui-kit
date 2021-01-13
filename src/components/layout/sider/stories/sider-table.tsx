@@ -1,4 +1,3 @@
-import React from 'react';
 import dedent from 'ts-dedent';
 
 const dataSource = [
