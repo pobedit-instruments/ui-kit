@@ -1,5 +1,5 @@
 import {themes} from '@storybook/theming';
-import '../src/components/index.less';
+import '../src/index.less';
 
 import {
     DesignSystem,

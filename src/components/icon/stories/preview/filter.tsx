@@ -10,7 +10,7 @@ import {
     TwoToneIcon
 } from './icons';
 
-import style from './preview.less';
+import style from './preview.module.less';
 
 enum ThemeType {
     OUTLINED = 'Outlined',

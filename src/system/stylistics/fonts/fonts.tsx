@@ -60,7 +60,7 @@ const TypographicScale: React.FunctionComponent<void> = (): JSX.Element => (
 
 const FontWeight: React.FunctionComponent<void> = (): JSX.Element => (
     <>
-        <Row gutter={[20, 20]} className={style.card}>
+        <Row gutter={[20, 20]} className={style.fonts}>
             <Col span={6}>
                 <Card>
                     <Text style={{fontSize: 68, fontWeight: 400}}>A</Text>

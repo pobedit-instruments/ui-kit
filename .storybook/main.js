@@ -26,7 +26,15 @@ module.exports = {
                         loader: 'style-loader'
                     },
                     {
-                        loader: 'css-loader'
+                        loader: 'css-loader',
+                        options: {
+                            modules: {
+                                // Для файлов index.less собираем Ant Design и переменные Less, которые его кастомизируют
+                                // Во всех остальных случаях используем CSS Modules
+                                auto: (resourcePath) => !resourcePath.endsWith('index.less'),
+                                // localIdentName: '[name]__[local]___[hash:base64:5]',
+                            },
+                        }
                     },
                     {
                         loader: 'less-loader',

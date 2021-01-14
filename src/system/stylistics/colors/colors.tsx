@@ -48,12 +48,12 @@ const ColorPalette: React.FunctionComponent<{theme: Theme}> = ({theme, ...props}
     const palette = getColorPalette(theme);
 
     return (
-        <Row className={`${style.colorTheme}${theme}`}>
+        <Row>
             {
                 palette.map((color) => (
                     <Col key={color}>
                         <Tooltip title={color}>
-                            <div className={style.colorThemePalette} style={{backgroundColor: color}} />
+                            <div className={style.product_palette__color} style={{backgroundColor: color}} />
                         </Tooltip>
                     </Col>
                 ))

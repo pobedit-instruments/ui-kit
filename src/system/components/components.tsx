@@ -260,9 +260,16 @@ const Components = (): JSX.Element[] => {
                         {
                             items.map(({name, icon}) => (
                                 <Col span={6} key={name}>
-                                    <Card hoverable={true} title={name} onClick={linkTo(`${title}/${name}`)}>
+                                    <Card hoverable={true}
+                                          title={name}
+                                          onClick={linkTo(`${title}/${name}`)}
+                                    >
                                         <div className={style.components__card}>
-                                            <img src={icon} alt={name} title={name} className={style.components__image} />
+                                            <img src={icon}
+                                                 alt={name}
+                                                 title={name}
+                                                 className={style.components__image}
+                                            />
                                         </div>
                                     </Card>
                                 </Col>

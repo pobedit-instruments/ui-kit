@@ -16,7 +16,7 @@ import {
     ThemeType
 } from './filter';
 
-import style from './preview.less';
+import style from './preview.module.less';
 
 const {Title, Paragraph} = Typography;
 

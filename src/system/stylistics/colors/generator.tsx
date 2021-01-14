@@ -32,9 +32,15 @@ const PaletteGenerator: React.FunctionComponent<void> = (): JSX.Element => {
                     const name = `color-${index + 1}`;
 
                     return (
-                        <CopyToClipboard key={index} text={name} onCopy={handleCopyColor}>
+                        <CopyToClipboard key={index}
+                                         text={name}
+                                         onCopy={handleCopyColor}
+                        >
                             <Tooltip title={color}>
-                                <Col flex="auto" className={style.generatorValue} style={{backgroundColor: color}}>
+                                <Col flex="auto"
+                                     className={style.neutral_palette__color}
+                                     style={{backgroundColor: color}}
+                                >
                                     {name}
                                 </Col>
                             </Tooltip>

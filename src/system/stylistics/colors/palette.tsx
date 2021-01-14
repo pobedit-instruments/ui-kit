@@ -27,16 +27,27 @@ const Palette: React.FunctionComponent<void> = (): JSX.Element => {
             {
                 palette.map(([name, colors]) => (
                     <Col span={8} key={name}>
-                        <Title level={3} className={style.paletteTitle}>{name}</Title>
+                        <Title level={3}
+                               className={style.system_palette__title}
+                        >
+                            {name}
+                        </Title>
 
                         {
                             colors.map((value, index) => {
                                 const color = `${name}-${index + 1}`;
 
                                 return (
-                                    <CopyToClipboard key={value} text={color} onCopy={handleCopyColor}>
-                                        <Tooltip title={value} placement="right">
-                                            <div className={style.colorName} style={{backgroundColor: value}}>
+                                    <CopyToClipboard key={value}
+                                                     text={color}
+                                                     onCopy={handleCopyColor}
+                                    >
+                                        <Tooltip title={value}
+                                                 placement="right"
+                                        >
+                                            <div className={style.system_palette__color}
+                                                 style={{backgroundColor: value}}
+                                            >
                                                 {color}
                                             </div>
                                         </Tooltip>
