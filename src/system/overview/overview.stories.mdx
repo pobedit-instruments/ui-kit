@@ -45,20 +45,22 @@ yarn add -D @pushkin/ui-kit
 
 ## Пример использования
 
+Простой пример:
 ```tsx
 import React from 'react';
-import {render} from 'react-dom';
-import {DatePicker} from '@pushkin/ui-kit';
+import {Button} from '@pushkin/ui-kit';
 
-const App = () => {
-    const handleChange = (value: string) => {
-      console.log(value);
-    };
+const Component = () => <Button />;
+```
 
-    return <DatePicker onChange={handleChange} />;
-};
+Более осмысленный пример:
+```tsx
+import React from 'react';
+import {Button, ButtonProps} from '@pushkin/ui-kit/button';
 
-render(<App />, document.getElementById('root'));
+const Component: React.FunctionComponent<ButtonProps> = ({...props}) => (
+    <Button {...props} />
+);
 ```
 
 ## Тесты
