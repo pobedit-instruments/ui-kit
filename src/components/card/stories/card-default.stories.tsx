@@ -9,7 +9,7 @@ import {
 import {CardProps} from 'src/components/card';
 
 const Template: Story<CardProps> = ({...props}): JSX.Element => {
-    const [loading, setLoading] = React.useState<boolean>(false);
+    const [loading, setLoading] = React.useState<boolean>(true);
 
     const handleChange = (state: boolean) => setLoading(state);
 
@@ -17,7 +17,9 @@ const Template: Story<CardProps> = ({...props}): JSX.Element => {
         <Card title="Свадьба в Малиновке"
               loading={loading}
               extra={
-                  <Switch onChange={handleChange} />
+                  <Switch onChange={handleChange}
+                          checked={loading}
+                  />
               }
               style={{ width: 300 }}
               {...props}

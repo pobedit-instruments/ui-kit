@@ -7,10 +7,12 @@ import {
 } from 'src/components/text-field';
 
 const {Group} = TextField;
+const INPUT_WIDTH = 200;
 
 const Template: Story<TextFieldGroupProps> = ({...props}): JSX.Element => (
     <Group compact={true} {...props}>
-        <TextField style={{width: 300}} />
+        <TextField style={{width: INPUT_WIDTH}} />
+        <TextField style={{width: INPUT_WIDTH}} />
     </Group>
 );
 

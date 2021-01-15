@@ -11,7 +11,6 @@ const Template: Story<PaginationProps> = ({...props}): JSX.Element => (
     <div style={{height: 150}}>
         <Pagination total={1000}
                     showSizeChanger={true}
-                    showQuickJumper={true}
                     {...props}
         />
     </div>

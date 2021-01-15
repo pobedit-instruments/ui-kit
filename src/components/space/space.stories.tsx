@@ -115,6 +115,7 @@ const controls: Meta<SpaceProps> = {
     }
 };
 
-export {SpaceStory} from './stories/space-default.stories';
+export {HorizontalSpaceStory} from './stories/space-horizontal.stories';
+export {VerticalSpaceStory} from './stories/space-vertical.stories';
 
 export default controls;
