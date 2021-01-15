@@ -84,6 +84,7 @@ enum Indicator {
     EMPTY = 'Отсутствие данных',
     SKELETON = 'Скелетон',
     SPINNER = 'Спиннер',
+    PULSAR = 'Пульсар',
     TIMELINE = 'Новостная лента'
 }
 

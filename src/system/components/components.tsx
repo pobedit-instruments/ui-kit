@@ -144,6 +144,10 @@ const components: Components = [
                 icon: './stories/system/components/spin.svg'
             },
             {
+                name: Indicator.PULSAR,
+                icon: './stories/system/components/pulsar.png'
+            },
+            {
                 name: Indicator.SKELETON,
                 icon: './stories/system/components/skeleton.svg'
             },

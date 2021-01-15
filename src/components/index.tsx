@@ -39,6 +39,7 @@ export {Timeline} from './timeline';
 export {ProgressBar} from './progress-bar';
 export {Skeleton} from './skeleton';
 export {Spinner} from './spinner';
+export {Pulsar} from './pulsar';
 
 // NAVIGATION
 export {Breadcrumb} from './breadcrumb';
