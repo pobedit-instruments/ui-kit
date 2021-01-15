@@ -1,57 +1,57 @@
 import React from 'react';
 
 import {
-    Row,
-    Col,
+    Grid,
     Card,
+    Space,
     Typography
-} from 'antd';
+} from 'src/components';
 
 import style from './fonts.less';
 
 const {Text, Title} = Typography;
-const {Meta} = Card;
+const {Column, Row} = Grid;
 
 const sizeValues: number[] = [12, 14, 16, 20, 24, 30, 38];
 
 const TypographicScale: React.FunctionComponent<void> = (): JSX.Element => (
     <>
         <Row align="bottom">
-            <Col span={1}>
+            <Column span={1}>
                 <Text style={{fontSize: 12}}>a</Text>
-            </Col>
+            </Column>
 
-            <Col span={1}>
+            <Column span={1}>
                 <Text>a</Text>
-            </Col>
+            </Column>
 
-            <Col span={1}>
+            <Column span={1}>
                 <Title level={5}>a</Title>
-            </Col>
+            </Column>
 
-            <Col span={1}>
+            <Column span={1}>
                 <Title level={4}>a</Title>
-            </Col>
+            </Column>
 
-            <Col span={1}>
+            <Column span={1}>
                 <Title level={3}>a</Title>
-            </Col>
+            </Column>
 
-            <Col span={1}>
+            <Column span={1}>
                 <Title level={2}>a</Title>
-            </Col>
+            </Column>
 
-            <Col span={1}>
+            <Column span={1}>
                 <Title>a</Title>
-            </Col>
+            </Column>
         </Row>
 
         <Row>
             {
                 sizeValues.map((value) => (
-                    <Col span={1} key={value}>
+                    <Column span={1} key={value}>
                         <Text>{value}</Text>
-                    </Col>
+                    </Column>
                 ))
             }
         </Row>
@@ -61,24 +61,32 @@ const TypographicScale: React.FunctionComponent<void> = (): JSX.Element => (
 const FontWeight: React.FunctionComponent<void> = (): JSX.Element => (
     <>
         <Row gutter={[20, 20]} className={style.fonts}>
-            <Col span={6}>
+            <Column span={6}>
                 <Card>
-                    <Text style={{fontSize: 68, fontWeight: 400}}>A</Text>
-                    <Meta description="Regular 400" />
+                    <Space direction="vertical">
+                        <Text style={{fontSize: 68, fontWeight: 400}}>A</Text>
+                        <Text>Regular 400</Text>
+                    </Space>
                 </Card>
-            </Col>
-            <Col span={6}>
+            </Column>
+
+            <Column span={6}>
                 <Card>
-                    <Text style={{fontSize: 68, fontWeight: 500}}>B</Text>
-                    <Meta description="Medium 500" />
+                    <Space direction="vertical">
+                        <Text style={{fontSize: 68, fontWeight: 500}}>B</Text>
+                        <Text>Medium 500</Text>
+                    </Space>
                 </Card>
-            </Col>
-            <Col span={6}>
+            </Column>
+
+            <Column span={6}>
                 <Card>
-                    <Text style={{fontSize: 68, fontWeight: 600}}>A</Text>
-                    <Meta description="Semi-bold 600" />
+                    <Space direction="vertical">
+                        <Text style={{fontSize: 68, fontWeight: 600}}>A</Text>
+                        <Text>Semi-bold 600</Text>
+                    </Space>
                 </Card>
-            </Col>
+            </Column>
         </Row>
     </>
 );

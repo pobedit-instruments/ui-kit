@@ -1,9 +1,15 @@
 import React from 'react';
 import {Story} from '@storybook/react/types-6-0';
-import {Tag} from 'antd';
 
-import {Table} from 'src/components';
-import {TableProps, ColumnsType} from 'src/components/table';
+import {
+    Table,
+    Tag
+} from 'src/components';
+
+import {
+    TableProps,
+    ColumnsType
+} from 'src/components/table';
 
 type User = {
     key: number;

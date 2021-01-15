@@ -1,7 +1,8 @@
 import React from 'react';
 import {Story} from '@storybook/react/types-6-0';
 import {UserOutlined, AntDesignOutlined} from '@ant-design/icons';
-import {Tooltip} from 'antd';
+
+import {Tooltip} from 'src/components';
 
 import {
     Avatar,

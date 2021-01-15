@@ -5,17 +5,18 @@ import {presetPalettes} from '@ant-design/colors';
 import {
     Tooltip,
     Typography,
-    message,
-    Row,
-    Col
-} from 'antd';
+    Notification,
+    Grid
+} from 'src/components';
 
 import style from './colors.less';
 
 const {Title} = Typography;
+const {Message} = Notification;
+const {Column, Row} = Grid;
 
 const handleCopyColor = (value: string) => {
-    message.success(`Значение цвета "${value}" скопировано в буфер обмена`);
+    Message.success(`Значение цвета "${value}" скопировано в буфер обмена`);
 };
 
 const Palette: React.FunctionComponent<void> = (): JSX.Element => {
@@ -26,7 +27,7 @@ const Palette: React.FunctionComponent<void> = (): JSX.Element => {
         <Row gutter={24}>
             {
                 palette.map(([name, colors]) => (
-                    <Col span={8} key={name}>
+                    <Column span={8} key={name}>
                         <Title level={3}
                                className={style.system_palette__title}
                         >
@@ -55,7 +56,7 @@ const Palette: React.FunctionComponent<void> = (): JSX.Element => {
                                 );
                             })
                         }
-                    </Col>
+                    </Column>
                 ))
             }
         </Row>

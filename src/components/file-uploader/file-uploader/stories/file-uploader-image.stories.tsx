@@ -1,19 +1,22 @@
 import React from 'react';
 import {Story} from '@storybook/react/types-6-0';
-import {message} from 'antd';
 
 import {
     LoadingOutlined,
     PlusOutlined
 } from '@ant-design/icons';
 
-
-import {FileUploader} from 'src/components';
+import {
+    FileUploader,
+    Notification
+} from 'src/components';
 
 import {
     FileUploaderProps,
     FileStatus
 } from 'src/components/file-uploader';
+
+const {Message} = Notification;
 
 const params: FileUploaderProps = {
     name: 'Аватар',
@@ -29,13 +32,13 @@ const beforeUpload: BeforeUpload = (file) => {
     const image = /image\/(png|jp[e]?g)/.test(file.type);
 
     if (!image) {
-        message.error('You can only upload JPG/PNG file!');
+        Message.error('You can only upload JPG/PNG file!');
     }
 
     const goodSize = file.size / 1024 / 1024 < 2;
 
     if (!goodSize) {
-        message.error('Изображение должно быть меньше 2MB!');
+        Message.error('Изображение должно быть меньше 2MB!');
     }
 
     return image && goodSize;
@@ -51,7 +54,7 @@ function getBase64(image: Blob, callback: (image: string) => void) {
     if (image) {
         reader.readAsDataURL(image);
     } else {
-        message.error(`Ошибка загрузки изображения"`);
+        Message.error(`Ошибка загрузки изображения"`);
     }
 }
 
@@ -87,7 +90,7 @@ const Template: Story<FileUploaderProps> = ({...props}): JSX.Element => {
                 break;
 
             case FileStatus.ERROR:
-                message.error(`Ошибка загрузки файла "${file.name}"`);
+                Message.error(`Ошибка загрузки файла "${file.name}"`);
                 setLoading(false);
 
                 break;

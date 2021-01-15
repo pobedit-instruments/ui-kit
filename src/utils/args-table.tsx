@@ -1,9 +1,9 @@
-import React, {
-    ComponentProps,
-    FunctionComponent
-} from 'react';
+import React, {ComponentProps} from 'react';
 
-import {Table, Typography} from 'antd';
+import {
+    Table,
+    Typography
+} from 'src/components';
 
 type TableProps = {
     name: string;

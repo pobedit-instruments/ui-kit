@@ -1,6 +1,6 @@
 import React from 'react';
 import {Story} from '@storybook/react/types-6-0';
-import {Space} from 'antd';
+import {Space} from 'src/components';
 
 import {
     Button,

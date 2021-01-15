@@ -2,17 +2,18 @@ import React from 'react';
 import {Story} from '@storybook/react/types-6-0';
 import {UploadOutlined} from '@ant-design/icons';
 
-import {message} from 'antd';
-
 import {
     Button,
-    FileUploader
+    FileUploader,
+    Notification
 } from 'src/components';
 
 import {
     FileUploaderProps,
     FileStatus
 } from 'src/components/file-uploader';
+
+const {Message} = Notification;
 
 const params: FileUploaderProps = {
     name: 'Файл',
@@ -23,12 +24,12 @@ const params: FileUploaderProps = {
     onChange({file, fileList}) {
         switch (file.status) {
             case FileStatus.DONE:
-                message.success(`Файл "${file.name}" загружен`);
+                Message.success(`Файл "${file.name}" загружен`);
 
                 break;
 
             case FileStatus.ERROR:
-                message.error(`Ошибка загрузки файла "${file.name}"`);
+                Message.error(`Ошибка загрузки файла "${file.name}"`);
 
                 break;
         }

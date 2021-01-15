@@ -1,19 +1,17 @@
 import React, {DetailedReactHTMLElement} from 'react';
 import {Story} from '@storybook/react/types-6-0';
+import dedent from 'ts-dedent';
 
 import {
     DownOutlined,
     UserOutlined,
 } from '@ant-design/icons';
 
-import {Tooltip} from 'antd';
-
-import dedent from 'ts-dedent';
-
 import {
     Dropdown,
     Button,
-    Space
+    Space,
+    Tooltip
 } from 'src/components';
 
 import {DropdownButtonProps} from 'src/components/dropdown';

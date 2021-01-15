@@ -1,7 +1,6 @@
 import React from 'react';
 import {Story} from '@storybook/react/types-6-0';
 import {linkTo} from '@storybook/addon-links';
-import {Menu} from 'antd';
 import dedent from 'ts-dedent';
 
 import {preventClick} from 'src/utils/events';
@@ -10,6 +9,8 @@ import {
     BasicElement,
     Component
 } from 'src/structure';
+
+import {Menu} from 'src/components';
 
 import {
     Breadcrumb,

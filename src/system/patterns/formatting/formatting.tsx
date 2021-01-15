@@ -1,6 +1,9 @@
 import React from 'react';
-import {Table} from 'antd';
-import {ColumnsType} from 'antd/lib/table/interface';
+
+import {
+    Table,
+    ColumnsType
+} from 'src/components/table';
 
 const columns: ColumnsType<{}> = [
     {

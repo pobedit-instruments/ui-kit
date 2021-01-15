@@ -1,8 +1,11 @@
 import React from 'react';
 import {Story} from '@storybook/react/types-6-0';
-
 import {InboxOutlined} from '@ant-design/icons';
-import {message} from 'antd';
+
+import {
+    Notification,
+    Space
+} from 'src/components';
 
 import {
     FileUploader,
@@ -11,6 +14,7 @@ import {
 } from 'src/components/file-uploader';
 
 const {Dragger} = FileUploader;
+const {Message} = Notification;
 
 const params: FileUploaderProps = {
     name: 'file',
@@ -20,12 +24,12 @@ const params: FileUploaderProps = {
     onChange({file, fileList}) {
         switch (file.status) {
             case FileStatus.DONE:
-                message.success(`Файл "${file.name}" загружен`);
+                Message.success(`Файл "${file.name}" загружен`);
 
                 break;
 
             case FileStatus.ERROR:
-                message.error(`Ошибка загрузки файла "${file.name}"`);
+                Message.error(`Ошибка загрузки файла "${file.name}"`);
 
                 break;
         }
@@ -35,11 +39,10 @@ const params: FileUploaderProps = {
 
 const Template: Story<FileUploaderProps> = ({...props}): JSX.Element => (
     <Dragger {...params} {...props}>
-        <p className="ant-upload-drag-icon">
-            <InboxOutlined />
-        </p>
-
-        <p className="ant-upload-text">Кликните или перетащите файл</p>
+        <Space direction="vertical">
+            <InboxOutlined style={{fontSize: 50, color: '#0078D2'}} />
+            Кликните или перетащите файл
+        </Space>
     </Dragger>
 );
 

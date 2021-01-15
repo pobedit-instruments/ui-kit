@@ -1,8 +1,11 @@
 import React from 'react';
-import {Radio, Space} from 'antd';
 import {RadioChangeEvent} from 'antd/lib/radio/interface';
-
 import Icon from '@ant-design/icons';
+
+import {
+    Radio,
+    Space
+} from 'src/components';
 
 import {
     FilledIcon,

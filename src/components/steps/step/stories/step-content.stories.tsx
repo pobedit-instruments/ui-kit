@@ -1,16 +1,17 @@
 import React from 'react';
 import {Story} from '@storybook/react/types-6-0';
-import {message} from 'antd';
 
 import {
     Button,
     Steps,
     Divider,
+    Notification
 } from 'src/components';
 
 import {StepsProps} from 'src/components/steps';
 
 const {Step} = Steps;
+const {Message} = Notification;
 
 const steps = [
     {
@@ -56,13 +57,17 @@ const Template: Story<StepsProps> = ({...props}): JSX.Element => {
 
             <div>
                 {current < LAST_STEP && (
-                    <Button type="primary" onClick={() => next()}>
+                    <Button type="primary"
+                            onClick={() => next()}
+                    >
                         Следующий
                     </Button>
                 )}
 
                 {current === LAST_STEP && (
-                    <Button type="primary" onClick={() => message.success('Выполнено!')}>
+                    <Button type="primary"
+                            onClick={() => Message.success('Выполнено!')}
+                    >
                         Выполнено
                     </Button>
                 )}

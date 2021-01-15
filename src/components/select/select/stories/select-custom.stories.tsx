@@ -1,6 +1,6 @@
 import React from 'react';
 import {Story} from '@storybook/react/types-6-0';
-import {Tag} from 'antd';
+import dedent from 'ts-dedent';
 
 import {
     Select,
@@ -8,7 +8,7 @@ import {
     CustomTagProps
 } from 'src/components/select';
 
-import dedent from 'ts-dedent';
+import {Tag} from 'src/components';
 import {CompactMenuStory} from '../../../menu/menu/stories/menu-compact.stories';
 
 const options = [

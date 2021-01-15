@@ -3,11 +3,10 @@ import {linkTo} from '@storybook/addon-links';
 
 import {
     Card,
-    Col,
+    Grid,
     Divider,
-    Row,
     Typography
-} from 'antd';
+} from 'src/components';
 
 import {
     BasicElement,
@@ -30,6 +29,9 @@ type Components = Array<{
         icon: string;
     }>
 }>;
+
+const {Column, Row} = Grid;
+
 
 const components: Components = [
     {
@@ -253,13 +255,13 @@ const Components = (): JSX.Element[] => {
             <Divider />
 
             <Row className={style.components}>
-                <Col span={24}>
+                <Column span={24}>
                     <Typography.Title level={3}>{title}</Typography.Title>
 
                     <Row gutter={[20, 20]}>
                         {
                             items.map(({name, icon}) => (
-                                <Col span={6} key={name}>
+                                <Column span={6} key={name}>
                                     <Card hoverable={true}
                                           title={name}
                                           onClick={linkTo(`${title}/${name}`)}
@@ -272,11 +274,11 @@ const Components = (): JSX.Element[] => {
                                             />
                                         </div>
                                     </Card>
-                                </Col>
+                                </Column>
                             ))
                         }
                     </Row>
-                </Col>
+                </Column>
             </Row>
         </div>
     ));

@@ -3,7 +3,7 @@ import {Story} from '@storybook/react/types-6-0';
 import {AppstoreTwoTone} from '@ant-design/icons';
 import {blue} from '@ant-design/colors';
 import dedent from 'ts-dedent';
-import {Typography} from 'antd';
+import {Typography} from 'src/components';
 
 import {
     Icon,

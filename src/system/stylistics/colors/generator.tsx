@@ -3,10 +3,9 @@ import CopyToClipboard from 'react-copy-to-clipboard';
 
 import {
     Tooltip,
-    message,
-    Row,
-    Col
-} from 'antd';
+    Grid,
+    Notification
+} from 'src/components';
 
 import {
     generate
@@ -15,8 +14,11 @@ import {
 
 import style from './colors.less';
 
+const {Message} = Notification;
+const {Column, Row} = Grid;
+
 const handleCopyColor = (value: string) => {
-    message.success(`Значение цвета "${value}" скопировано в буфер обмена`);
+    Message.success(`Значение цвета "${value}" скопировано в буфер обмена`);
 };
 
 const DEFAULT_COLOR = '#ccc';
@@ -37,12 +39,12 @@ const PaletteGenerator: React.FunctionComponent<void> = (): JSX.Element => {
                                          onCopy={handleCopyColor}
                         >
                             <Tooltip title={color}>
-                                <Col flex="auto"
+                                <Column flex="auto"
                                      className={style.neutral_palette__color}
                                      style={{backgroundColor: color}}
                                 >
                                     {name}
-                                </Col>
+                                </Column>
                             </Tooltip>
                         </CopyToClipboard>
                     );

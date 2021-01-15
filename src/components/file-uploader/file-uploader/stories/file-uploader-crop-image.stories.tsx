@@ -1,14 +1,18 @@
 import React from 'react';
 import {Story} from '@storybook/react/types-6-0';
-import {message} from 'antd';
 import ImageCrop from 'antd-img-crop';
 
-import {FileUploader} from 'src/components';
+import {
+    FileUploader,
+    Notification
+} from 'src/components';
 
 import {
     FileUploaderProps,
     FileStatus
 } from 'src/components/file-uploader';
+
+const {Message} = Notification;
 
 type UploadPreview = FileUploaderProps['onPreview'];
 type HandleChange = FileUploaderProps['onChange'];
@@ -55,7 +59,7 @@ const Template: Story<FileUploaderProps> = ({...props}): JSX.Element => {
     const handleChange: HandleChange = ({file, fileList: newFileList}) => {
         switch (file.status) {
             case FileStatus.ERROR:
-                message.error(`Ошибка загрузки файла "${file.name}"`);
+                Message.error(`Ошибка загрузки файла "${file.name}"`);
 
                 break;
 
