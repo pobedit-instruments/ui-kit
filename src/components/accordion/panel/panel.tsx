@@ -1,4 +1,4 @@
-import React, {FunctionComponent} from 'react';
+import React from 'react';
 import AntAccordion, {CollapsePanelProps} from 'antd/lib/collapse';
 
 const AntAccordionPanel = AntAccordion.Panel;

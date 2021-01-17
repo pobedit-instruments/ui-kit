@@ -20,7 +20,7 @@ import {
     Widget
 } from 'src/structure';
 
-import style from './components.less';
+import style from './components.stories.less';
 
 type Components = Array<{
     title: string;

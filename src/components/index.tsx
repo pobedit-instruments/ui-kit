@@ -1,4 +1,3 @@
-import './index.less';
 
 // BASIC ELEMENTS
 export {Button} from './button';

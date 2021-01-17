@@ -3,7 +3,7 @@ import {Story} from '@storybook/react/types-6-0';
 import dedent from 'ts-dedent';
 
 import {Text, TextProps} from 'src/components/typography/text';
-import style from './text.less';
+import style from './text.stories.less';
 
 const Template: Story<TextProps> = (props): JSX.Element => (
     <Text {...props}>

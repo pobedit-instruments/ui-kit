@@ -12,7 +12,7 @@ import {
     // presetPalettes
 } from '@ant-design/colors';
 
-import style from './colors.less';
+import style from './colors.stories.less';
 
 const {Message} = Notification;
 const {Column, Row} = Grid;

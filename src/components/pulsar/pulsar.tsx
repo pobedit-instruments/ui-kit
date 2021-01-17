@@ -1,7 +1,6 @@
 import React from 'react';
-import style from './pulsar.less';
-
-const displayName = 'Pulsar';
+import {prefix} from 'src/config';
+import './pulsar.less';
 
 type PulsarProps = {
     color?: string;
@@ -9,6 +8,8 @@ type PulsarProps = {
 };
 
 type Size = Record<string, number>;
+
+const displayName = 'Pulsar';
 
 const sizeType: Size = {
     small: 8,
@@ -28,21 +29,26 @@ const Pulsar: React.FunctionComponent<PulsarProps> = ({
     const position = -(sizeValue * 3) / 2;
 
     return (
-        <div className={`${style.pulsar}`} style={{
-            backgroundColor: color,
-            height: sizeValue,
-            width: sizeValue
-        }}>
-            <div className={style.pulsar__ripple} style={{
-                backgroundColor: color,
-                width: ripple,
-                height: ripple,
-                marginTop: position,
-                marginLeft: position
-            }}/>
+        <div data-test={displayName}
+             className={`${prefix}-pulsar`}
+             style={{
+                 backgroundColor: color,
+                 height: sizeValue,
+                 width: sizeValue
+             }}
+        >
+            <div className={`${prefix}-pulsar__ripple`}
+                 style={{
+                     backgroundColor: color,
+                     width: ripple,
+                     height: ripple,
+                     marginTop: position,
+                     marginLeft: position
+                 }}
+            />
         </div>
     );
-}
+};
 
 Pulsar.displayName = displayName;
 

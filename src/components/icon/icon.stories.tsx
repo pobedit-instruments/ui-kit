@@ -53,7 +53,7 @@ const controls: Meta<IconProps> = {
 
             source: {
                 code: dedent`
-                    import React, {FunctionComponent} from 'react';
+                    import React from 'react';
                     import {AppleOutlined} from '@ant-design/icons';
                     import {Icon} from '${name}';
 

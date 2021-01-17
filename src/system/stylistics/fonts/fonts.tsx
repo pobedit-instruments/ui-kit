@@ -7,7 +7,7 @@ import {
     Typography
 } from 'src/components';
 
-import style from './fonts.less';
+import style from './fonts.stories.less';
 
 const {Text, Title} = Typography;
 const {Column, Row} = Grid;

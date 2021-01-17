@@ -14,7 +14,7 @@ import {
 } from 'src/components';
 
 
-import style from './colors.less';
+import style from './colors.stories.less';
 
 enum Theme {
     LIGHT = 'default',

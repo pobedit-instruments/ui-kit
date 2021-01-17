@@ -17,8 +17,21 @@
         "storybook": "start-storybook -s ./public -p 6006",
         "build-storybook": "build-storybook -s ./public",
         "update": "npx sb upgrade",
+        "preview": "",
         "deploy-storybook": "storybook-to-ghpages -- --out=.build",
         "tsc": "tsc --noEmit"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
     },
     "temporaryDependencies": {
         "@storybook/theming": "6.0.26",
@@ -43,7 +56,7 @@
         "@types/react-dom": "16.9.8",
         "@types/react-highlight-words": "0.16.1",
         "antd": "4.10.2",
-        "babel-loader": "8.2.2",
+        "babel-loader": "8.1.0",
         "css-loader": "5.0.1",
         "less-loader": "7.2.1",
         "react": "17.0.1",

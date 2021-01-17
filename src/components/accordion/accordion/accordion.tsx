@@ -1,4 +1,4 @@
-import React, {FunctionComponent} from 'react';
+import React from 'react';
 import AntAccordion, {CollapseProps} from 'antd/lib/collapse';
 
 const displayName = 'Accordion';

@@ -41,6 +41,7 @@ npm-debug.log
 .eslintcache
 
 TODO.md
+/build
 
 
 #*.js

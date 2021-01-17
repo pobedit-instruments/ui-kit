@@ -15,7 +15,7 @@ import {
     ThemeType
 } from './filter';
 
-import style from './preview.module.less';
+import style from './preview.stories.less';
 
 const {Title, Paragraph} = Typography;
 const {Message} = Notification;

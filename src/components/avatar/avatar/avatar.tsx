@@ -1,4 +1,4 @@
-import React, {FunctionComponent} from 'react';
+import React  from 'react';
 import AntAvatar, {AvatarProps} from 'antd/lib/avatar';
 
 const displayName = 'Avatar';
