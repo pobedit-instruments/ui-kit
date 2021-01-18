@@ -15,7 +15,6 @@ import {
 } from 'src/structure';
 
 import './button/stories/button.stories.less';
-import foo from './group/stories/text-buttons.png';
 
 const controls: Meta<ButtonProps> = {
     title: getStoryTitle([
