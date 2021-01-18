@@ -42,35 +42,35 @@ const components: Components = [
             },
             {
                 name: BasicElement.ICON,
-                 icon: require('./static/icon.svg')
+                icon: require('./static/icon.svg')
             },
             {
                 name: BasicElement.BUTTON,
-                 icon: require('./static/button.svg')
+                icon: require('./static/button.svg')
             },
             {
                 name: BasicElement.RADIO,
-                 icon: require('./static/radio.svg')
+                icon: require('./static/radio.svg')
             },
             {
                 name: BasicElement.CHECKBOX,
-                 icon: require('./static/checkbox.svg')
+                icon: require('./static/checkbox.svg')
             },
             {
                 name: BasicElement.SWITCH,
-                 icon: require('./static/switch.svg')
+                icon: require('./static/switch.svg')
             },
             {
                 name: BasicElement.TEXT_FIELD,
-                 icon: require('./static/input.svg')
+                icon: require('./static/input.svg')
             },
             {
                 name: BasicElement.SELECT,
-                 icon: require('./static/select.svg')
+                icon: require('./static/select.svg')
             },
             {
                 name: BasicElement.SLIDER,
-                 icon: require('./static/slider.svg')
+                icon: require('./static/slider.svg')
             }
         ]
     },
@@ -80,31 +80,31 @@ const components: Components = [
         items: [
             {
                 name: Content.TABLE,
-                 icon: require('./static/table.svg')
+                icon: require('./static/table.svg')
             },
             {
                 name: Content.LIST,
-                 icon: require('./static/list.svg')
+                icon: require('./static/list.svg')
             },
             {
                 name: Content.CARD,
-                 icon: require('./static/card.svg')
+                icon: require('./static/card.svg')
             },
             {
                 name: Content.COUPON,
-                 icon: require('./static/coupon.svg')
+                icon: require('./static/coupon.svg')
             },
             {
                 name: Content.ACCORDION,
-                 icon: require('./static/collapse.svg')
+                icon: require('./static/collapse.svg')
             },
             {
                 name: Content.PANEL,
-                 icon: require('./static/drawer.svg')
+                icon: require('./static/drawer.svg')
             },
             {
                 name: Content.MODAL,
-                 icon: require('./static/modal.svg')
+                icon: require('./static/modal.svg')
             }
         ]
     },
@@ -114,19 +114,19 @@ const components: Components = [
         items: [
             {
                 name: Layout.GRID,
-                 icon: require('./static/grid.svg')
+                icon: require('./static/grid.svg')
             },
             {
                 name: Layout.LAYOUT,
-                 icon: require('./static/layout.svg')
+                icon: require('./static/layout.svg')
             },
             {
                 name: Layout.DIVIDER,
-                 icon: require('./static/divider.svg')
+                icon: require('./static/divider.svg')
             },
             {
                 name: Layout.SPACE,
-                 icon: require('./static/space.svg')
+                icon: require('./static/space.svg')
             }
         ]
     },
@@ -136,23 +136,23 @@ const components: Components = [
         items: [
             {
                 name: Indicator.PROGRESS,
-                 icon: require('./static/progress.svg')
+                icon: require('./static/progress.svg')
             },
             {
                 name: Indicator.SPINNER,
-                 icon: require('./static/spin.svg')
+                icon: require('./static/spin.svg')
             },
             {
                 name: Indicator.PULSAR,
-                 icon: require('./static/pulsar.png')
+                icon: require('./static/pulsar.png')
             },
             {
                 name: Indicator.SKELETON,
-                 icon: require('./static/skeleton.svg')
+                icon: require('./static/skeleton.svg')
             },
             {
                 name: Indicator.TIMELINE,
-                 icon: require('./static/timeline.svg')
+                icon: require('./static/timeline.svg')
             }
         ]
     },
@@ -162,23 +162,27 @@ const components: Components = [
         items: [
             {
                 name: Navigation.BREADCRUMBS,
-                 icon: require('./static/breadcrumb.svg')
+                icon: require('./static/breadcrumb.svg')
             },
             {
                 name: Navigation.PAGINATION,
-                 icon: require('./static/pagination.svg')
+                icon: require('./static/pagination.svg')
             },
             {
                 name: Navigation.STEPS,
-                 icon: require('./static/steps.svg')
+                icon: require('./static/steps.svg')
             },
             {
                 name: Navigation.MENU,
-                 icon: require('./static/menu.svg')
+                icon: require('./static/menu.svg')
             },
             {
                 name: Navigation.TABS,
-                 icon: require('./static/tabs.svg')
+                icon: require('./static/tabs.svg')
+            },
+            {
+                name: Navigation.DROPDOWN,
+                icon: require('./static/dropdown.svg')
             }
         ]
     },
@@ -188,31 +192,31 @@ const components: Components = [
         items: [
             {
                 name: 'Строка оповещения',
-                 icon: require('./static/alert.svg')
+                icon: require('./static/alert.svg')
             },
             {
                 name: 'Информационное сообщение',
-                 icon: require('./static/message.svg')
+                icon: require('./static/message.svg')
             },
             {
                 name: Informers.NOTIFICATION,
-                 icon: require('./static/notification.svg')
+                icon: require('./static/notification.svg')
             },
             {
                 name: Informers.POPOVER,
-                 icon: require('./static/popover.svg')
+                icon: require('./static/popover.svg')
             },
             {
                 name: Informers.BADGE,
-                 icon: require('./static/badge.svg')
+                icon: require('./static/badge.svg')
             },
             {
                 name: Informers.TOOLTIP,
-                 icon: require('./static/tooltip.svg')
+                icon: require('./static/tooltip.svg')
             },
             {
                 name: Informers.TAG,
-                 icon: require('./static/tag.svg')
+                icon: require('./static/tag.svg')
             }
         ]
     },
@@ -222,11 +226,19 @@ const components: Components = [
         items: [
             {
                 name: Other.AFFIX,
-                 icon: require('./static/affix.svg')
+                icon: require('./static/affix.svg')
             },
             {
                 name: Other.FILE_UPLOADER,
-                 icon: require('./static/upload.svg')
+                icon: require('./static/upload.svg')
+            },
+            {
+                name: Other.AVATAR,
+                icon: require('./static/avatar.svg')
+            },
+            {
+                name: Other.FORM,
+                icon: require('./static/form.svg')
             }
         ]
     },
@@ -236,18 +248,18 @@ const components: Components = [
         items: [
             {
                 name: Widget.CALENDAR,
-                 icon: require('./static/calendar.svg')
+                icon: require('./static/calendar.svg')
             },
             {
                 name: Widget.BACK_TOP,
-                 icon: require('./static/back-top.svg')
+                icon: require('./static/back-top.svg')
             },
             {
                 name: Widget.IMAGE_PREVIEW,
-                 icon: require('./static/image.svg')
+                icon: require('./static/image.svg')
             }
         ]
-    },
+    }
 ];
 
 const Components = (): JSX.Element[] => {
