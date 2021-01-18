@@ -8,6 +8,15 @@ import {
     getStoryTitle
 } from 'src/structure';
 
+import  {
+    formAlignmentImage,
+    numbersAlignmentImage,
+    badTableImage,
+    goodTableImage,
+    tableImage,
+    textAlignmentImage
+} from './static';
+
 export const title = getStoryTitle([
     Structure.DESIGN_SYSTEM,
     DesignSystem.PATTERNS,
@@ -34,19 +43,19 @@ export const title = getStoryTitle([
 
 Если абзацы или длина слов слишком короткие или слишком свободные, тогда необходима единая визуальная отправная точка.
 
-<img src="./stories/system/patterns/alignment/text-alignment.png" width={600} />
+<img src={textAlignmentImage} width={600} />
 
 ## Выравнивание чисел <a name="numbers-alignment"></a>
 
 Чтобы быстрее сравнивать числа, мы также предлагаем выровнивать их по правому краю.
 
-<img src="./stories/system/patterns/alignment/numbers-alignment.png" width={600} />
+<img src={numbersAlignmentImage} width={600} />
 
 ## Выравнивание форм <a name="text-alignment"></a>
 
 С помощью обычного двоеточия и выравнивая текста по правому краю пользователи легче отделяют описание и контентную часть.
 
-<img src="./stories/system/patterns/alignment/form-alignment.png" width={600} />
+<img src={formAlignmentImage} width={600} />
 
 ## Выравнивание табличных данных <a name="text-table"></a>
 
@@ -59,12 +68,12 @@ export const title = getStoryTitle([
 
 Хороший пример:
 
-<img src="./stories/system/patterns/alignment/table-good.png" width={600} />
+<img src={goodTableImage} width={600} />
 
 Плохой пример:
 
-<img src="./stories/system/patterns/alignment/table-bad.png" width={600} />
+<img src={badTableImage} width={600} />
 
 Интерактивный [пример](https://www.darkhorseanalytics.com/blog/clear-off-the-table/) по работе с табличными данными:
 
-<img src="./stories/system/patterns/alignment/table.gif" width={600} />
+<img src={tableImage} width={600} />

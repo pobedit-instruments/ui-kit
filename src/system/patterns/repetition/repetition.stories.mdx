@@ -8,6 +8,12 @@ import {
     getStoryTitle
 } from 'src/structure';
 
+import {
+    cardsImage,
+    elementsImage,
+    formatImage
+} from './static';
+
 export const title = getStoryTitle([
     Structure.DESIGN_SYSTEM,
     DesignSystem.PATTERNS,
@@ -23,19 +29,19 @@ export const title = getStoryTitle([
 
 Пример повторения структуры блоков:
 
-<img src="./stories/system/patterns/repetition/cards.png" width={600} />
+<img src={cardsImage} width={600} />
 
 <br />
 
 Пример повторения элементов дизайна:
 
-<img src="./stories/system/patterns/repetition/elements.png" width={600} />
+<img src={elementsImage} width={600} />
 
 <br />
 
 Пример повторения формата:
 
-<img src="./stories/system/patterns/repetition/format.png" width={600} />
+<img src={formatImage} width={600} />
 
 <br />
 

@@ -7,6 +7,8 @@ import {
     getStoryTitle
 } from 'src/structure';
 
+import {headerImage} from './static';
+
 export const title = getStoryTitle([
     Structure.DESIGN_SYSTEM,
     DesignSystem.PATTERNS,
@@ -17,7 +19,6 @@ export const title = getStoryTitle([
 
 <br />
 
-<img src="./stories/system/patterns/accessibility/image.png" />
+<img src={headerImage} />
 
 Наверняка здесь что-то будет...
-

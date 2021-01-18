@@ -8,6 +8,12 @@ import {
     getStoryTitle
 } from 'src/structure';
 
+import {
+    checkboxImage,
+    gridImage,
+    spacingImage
+} from './static';
+
 export const title = getStoryTitle([
     Structure.DESIGN_SYSTEM,
     DesignSystem.STYLISTICS,
@@ -34,7 +40,7 @@ export const title = getStoryTitle([
 
 Сетка представляет собой набор пересекающийся горизонтальных и вертикальных линий — один набор определяет столбцы, а другой строки. <br />
 
-<img src="./stories/system/stylistics/layout/grid.png" width={600} />
+<img src={gridImage} width={600} />
 
 Чтобы помочь разработчикам макетов эффективнее принимать решения мы установили для всех используемых чисел кратность 8, а размерность сетки ограничили 24 колонками. Это позволяет нам более точно вычислять пропорции и сохранять вертикальный ритм не только в текстовом наполнении, но и в блочном.
 
@@ -42,11 +48,11 @@ export const title = getStoryTitle([
 
 У нас есть три формата: 8px (малый интервал), 16px (средний интервал) и 24px (большой интервал).
 
-<img src="./stories/system/stylistics/layout/spacing.png" width={590} />
+<img src={spacingImage} width={590} />
 
 Пример с чекбоксами:
 
-<img src="./stories/system/stylistics/layout/checkbox.png" width={600} />
+<img src={checkboxImage} width={600} />
 
 ## Почитать
 

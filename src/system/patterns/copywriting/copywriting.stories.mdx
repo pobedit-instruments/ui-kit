@@ -8,6 +8,26 @@ import {
     getStoryTitle
 } from 'src/structure';
 
+import  {
+    absoluteImage,
+    actionImage,
+    capitalImage,
+    clearImage,
+    completeImage,
+    consistentImage,
+    errorImage,
+    importantImage,
+    numberImage,
+    numbersImage,
+    popupImage,
+    myImage,
+    punctuationImage,
+    sentenceImage,
+    supportImage,
+    timeImage,
+    userImage
+} from './static';
+
 export const title = getStoryTitle([
     Structure.DESIGN_SYSTEM,
     DesignSystem.PATTERNS,
@@ -31,7 +51,7 @@ export const title = getStoryTitle([
 
 Перенос акцента с описания действий на обращение к пользователю внесет больше ясности и сократит размер текста.
 
-<img src="./stories/system/patterns/copywriting/user.png" width={600} />
+<img src={userImage} width={600} />
 
 <br />
 
@@ -39,7 +59,7 @@ export const title = getStoryTitle([
 
 Размещайте важную информацию на видном месте.
 
-<img src="./stories/system/patterns/copywriting/important.png" width={600} />
+<img src={importantImage} width={600} />
 
 <br />
 
@@ -48,7 +68,7 @@ export const title = getStoryTitle([
 Опускайте ненужные слова и не повторяйте известные пользователям факты. В большинстве случаев интерфейс не должен описывать все детали.
 Постарайтесь предоставить краткое и доступное содержание.
 
-<img src="./stories/system/patterns/copywriting/action.png" width={600} />
+<img src={actionImage} width={600} />
 
 <br />
 
@@ -56,12 +76,12 @@ export const title = getStoryTitle([
 
 Стройте единообразные предложения.
 
-<img src="./stories/system/patterns/copywriting/consistent.png" width={600} />
+<img src={consistentImage} width={600} />
 
 <br />
 <br />
 
-<img src="./stories/system/patterns/copywriting/popup.png" width={600} />
+<img src={popupImage} width={600} />
 
 <br />
 
@@ -70,7 +90,7 @@ export const title = getStoryTitle([
 Используйте простые, точные и понятные слова.<br />
 Косвенный, неоднозначный и чрезмерно «усовершенствованный» текст увеличит когнитивную нагрузку на пользователя.
 
-<img src="./stories/system/patterns/copywriting/clear.png" width={600} />
+<img src={clearImage} width={600} />
 
 <br />
 
@@ -79,7 +99,7 @@ export const title = getStoryTitle([
 Когда мы хотим, чтобы пользователь совершил действие, мы должны сосредоточиться на том, что пользователь может получить и как он себя чувствует.
 Сообщив пользователям о цели или важности действия, они могут с большей готовностью его выполнить.
 
-<img src="./stories/system/patterns/copywriting/complete.png" width={600} />
+<img src={completeImage} width={600} />
 
 <br />
 
@@ -87,7 +107,7 @@ export const title = getStoryTitle([
 
 Когда пользователь допускает ошибку ввода, ваше сообщение об ошибке должно выражаться в простой для понимания форме.
 
-<img src="./stories/system/patterns/copywriting/error.png" width={600} />
+<img src={errorImage} width={600} />
 
 <br />
 
@@ -95,7 +115,7 @@ export const title = getStoryTitle([
 
 Используйте слова точно и полностью. Профессиональные термины должны быть точными в соответствии с отраслевыми стандартами.
 
-<img src="./stories/system/patterns/copywriting/number.png" width={600} />
+<img src={numberImage} width={600} />
 
 <br />
 
@@ -105,7 +125,7 @@ export const title = getStoryTitle([
 
 Не обращайтесь к пользователю, используя «мой» и «ваш» в одной фразе.
 
-<img src="./stories/system/patterns/copywriting/my.png" width={600} />
+<img src={myImage} width={600} />
 
 <br />
 
@@ -115,7 +135,7 @@ export const title = getStoryTitle([
 Если вы хотите сохранить своих пользователей, не обвиняйте их, когда что-то идет не так.<br />
 Сосредоточьтесь на решении проблем, а не на обвинении.
 
-<img src="./stories/system/patterns/copywriting/support.png" width={600} />
+<img src={supportImage} width={600} />
 
 <br />
 
@@ -123,7 +143,7 @@ export const title = getStoryTitle([
 
 Не используйте слишком абсолютное выражение, которое доставит неудобство пользователю.
 
-<img src="./stories/system/patterns/copywriting/absolute.png" width={600} />
+<img src={absoluteImage} width={600} />
 
 <br />
 
@@ -134,7 +154,7 @@ export const title = getStoryTitle([
 При использовании полного названия продукта делайте первые буквы каждого слова заглавными.<br />
 Пишите сокращения названий продуктов заглавными буквами.
 
-<img src="./stories/system/patterns/copywriting/capital.png" width={600} />
+<img src={capitalImage} width={600} />
 
 <br />
 
@@ -142,7 +162,7 @@ export const title = getStoryTitle([
 
 Используйте заглавные буквы в предложениях только в заголовках, пунктах меню, кнопках и т.д.
 
-<img src="./stories/system/patterns/copywriting/sentence.png" width={600} />
+<img src={sentenceImage} width={600} />
 
 <br />
 
@@ -150,7 +170,7 @@ export const title = getStoryTitle([
 
 Используйте арабские цифры для количественных значений, потому что пользователи их быстрее прочитают чем слова.
 
-<img src="./stories/system/patterns/copywriting/numbers.png" width={600} />
+<img src={numbersImage} width={600} />
 
 <br />
 
@@ -158,6 +178,6 @@ export const title = getStoryTitle([
 
 Избегайте ненужных знаков препинания в заголовках, легендах и тултипах.
 
-<img src="./stories/system/patterns/copywriting/punctuation.png" width={600} />
+<img src={punctuationImage} width={600} />
 
 <br />

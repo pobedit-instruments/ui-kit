@@ -8,6 +8,18 @@ import {
     getStoryTitle
 } from 'src/structure';
 
+import {
+    actionImage,
+    bodyImage,
+    complexImage,
+    contrastImage,
+    copywritingImage,
+    cornersImage,
+    badGroupImage,
+    goodGroupImage,
+    popupImage
+} from './static';
+
 export const title = getStoryTitle([
     Structure.DESIGN_SYSTEM,
     DesignSystem.PATTERNS,
@@ -33,46 +45,46 @@ export const title = getStoryTitle([
 
 Кнопки, которые не подразумевают принятия решений (Применить, Отказаться и синонимичные им названия) не должны выделяться цветом, так же как и не должно быть больше одной главной кнопки.
 
-<img src="./stories/system/patterns/buttons/contrast.png" width={600} />
+<img src={contrastImage} width={600} />
 
 ## Расположение <a name="position"></a>
 
 Пример: расположение кнопок в контеной части
 
-<img src="./stories/system/patterns/buttons/body.png" width={600} />
+<img src={bodyImage} width={600} />
 
 Пример: расположение кнопок в нижней и верхней частях страницы
 
-<img src="./stories/system/patterns/buttons/corners.png" width={600} />
+<img src={cornersImage} width={600} />
 
 Пример: совмещенное расположения кнопок
 
-<img src="./stories/system/patterns/buttons/complex.png" width={300} />
+<img src={complexImage} width={300} />
 
 ## Группировка <a name="grouping"></a>
 
 Пример: желательная группировка кнопок
 
-<img src="./stories/system/patterns/buttons/group-good.png" width={600} />
+<img src={goodGroupImage} width={600} />
 
 Пример: нежелательная группировка кнопок
 
-<img src="./stories/system/patterns/buttons/group-bad.png" width={600} />
+<img src={badGroupImage} width={600} />
 
 ## Группировка <a name="action"></a>
 
 Пример: акцент на основное действие
 
-<img src="./stories/system/patterns/buttons/action.png" width={600} />
+<img src={actionImage} width={600} />
 
 ## Копирайтинг <a name="copywriting"></a>
 
 Используйте лаконичные глагольные названия
 
-<img src="./stories/system/patterns/buttons/copywriting.png" width={600} />
+<img src={copywritingImage} width={600} />
 
 ## Модальные окна <a name="popup"></a>
 
 Заголовок должен иметь связь с кнопками
 
-<img src="./stories/system/patterns/buttons/popup.png" width={600} />
+<img src={popupImage} width={600} />

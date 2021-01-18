@@ -12,6 +12,13 @@ import {
     getStoryTitle
 } from 'src/structure';
 
+import {
+    brandImage,
+    functionalImage,
+    hsvImage,
+    neutralImage
+} from './static';
+
 export const title = getStoryTitle([
     Structure.DESIGN_SYSTEM,
     DesignSystem.STYLISTICS,
@@ -35,7 +42,7 @@ export const title = getStoryTitle([
 
 ## Цветовая модель <a name="hsv"></a>
 
-<img src="./stories/system/stylistics/colors/hsv.png" width={400} />
+<img src={hsvImage} width={400} />
 
 Мы предпочитаем использовать цветовую модель HSV (HSB), которая помогает дизайнерам иметь четкое психологическое представление о цвете при разработке собственных палитр, а также облегчает общение в командах.
 
@@ -67,7 +74,7 @@ export const title = getStoryTitle([
 Цвет бренда - один из наиболее интуитивно понятных визуальных элементов, используемых для воплощения характеристик продукта и передачи идей.<br />
 При выборе цветов важно понимать, как цвет бренда используется в пользовательском интерфейсе. В базовой цветовой палитре для выбора основного цвета мы рекомендуем выбрать цветовую палитру из неглубокой глубины шестого цвета.
 
-<img src="./stories/system/stylistics/colors/brand.png" width={400} />
+<img src={brandImage} width={400} />
 
 <br />
 <br />
@@ -76,7 +83,7 @@ export const title = getStoryTitle([
 
 Функциональный цвет используется в компонентах, которые призваны привлечь внимание, например: теги, информеры, информационные строки и пр.
 
-<img src="./stories/system/stylistics/colors/functional.png" width={400} />
+<img src={functionalImage} width={400} />
 
 <br />
 <br />
@@ -86,9 +93,9 @@ export const title = getStoryTitle([
 Нейтральный цвет в основном используется в текстовой части интерфейса, в границах, разделительных линиях, а также служит дополнением к фону.<br />
 При определении нейтрального цвета необходимо учитывать разницу между темным и светлым фоном с учетом стандарта WCAG 2.0:
 
-<img src="./stories/system/stylistics/colors/neutral.png" width={400} />
+<img src={neutralImage} width={400} />
 
-## Програмное использование <a name="usage"></a>
+## Программное использование <a name="usage"></a>
 
 **Установите зависимость**
 

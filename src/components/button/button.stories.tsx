@@ -15,6 +15,7 @@ import {
 } from 'src/structure';
 
 import './button/stories/button.stories.less';
+import foo from './group/stories/text-buttons.png';
 
 const controls: Meta<ButtonProps> = {
     title: getStoryTitle([
@@ -33,11 +34,6 @@ const controls: Meta<ButtonProps> = {
                     ### Название компонента
 
                     **Button**
-
-                    <img src="./stories/components/button/text-buttons.png" class="button--text" width={700} />
-
-                    <br />
-                    <br />
 
                     ### Дочерние компоненты
 

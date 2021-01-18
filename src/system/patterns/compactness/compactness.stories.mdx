@@ -8,6 +8,12 @@ import {
     getStoryTitle
 } from 'src/structure';
 
+import  {
+    stepsImage,
+    tableImage,
+    tabsImage
+} from './static';
+
 export const title = getStoryTitle([
     Structure.DESIGN_SYSTEM,
     DesignSystem.PATTERNS,
@@ -22,16 +28,16 @@ export const title = getStoryTitle([
 
 Пример вложенности в таблицах:
 
-<img src="./stories/system/patterns/compactness/table.png" width={600} />
+<img src={tableImage} width={600} />
 
 <br />
 
 Пример c вкладками:
 
-<img src="./stories/system/patterns/compactness/tabs.png" width={600} />
+<img src={tabsImage} width={600} />
 
 <br />
 
-Пример c шагами:
+Пример с шагами:
 
-<img src="./stories/system/patterns/compactness/steps.png" width={600} />
+<img src={stepsImage} width={600} />

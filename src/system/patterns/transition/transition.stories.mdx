@@ -8,6 +8,16 @@ import {
     getStoryTitle
 } from 'src/structure';
 
+import {
+    accordionImage,
+    addingImage,
+    caruselImage,
+    deletingImage,
+    modalsImage,
+    modifyingImage,
+    slideImage
+} from './static';
+
 export const title = getStoryTitle([
     Structure.DESIGN_SYSTEM,
     DesignSystem.PATTERNS,
@@ -23,41 +33,41 @@ export const title = getStoryTitle([
 Пример создания иллюзии виртуального пространства при переходах:
 
 <video width="600" height="300" controls="controls" loop>
-    <source src="./stories/system/patterns/transition/slide.mp4" type="video/mp4" />
+    <source src={slideImage} type="video/mp4" />
 </video>
 
 Пример с каруселью:
 
 <video width="600" height="300" controls="controls" loop>
-    <source src="./stories/system/patterns/transition/carusel.mp4" type="video/mp4" />
+    <source src={caruselImage} type="video/mp4" />
 </video>
 
 Пример с аккордеоном:
 
 <video width="600" height="300" controls="controls" loop>
-    <source src="./stories/system/patterns/transition/accordion.mp4" type="video/mp4" />
+    <source src={accordionImage} type="video/mp4" />
 </video>
 
 Пример добавления элементов в таблицу:
 
 <video width="600" height="300" controls="controls" loop>
-    <source src="./stories/system/patterns/transition/adding.mp4" type="video/mp4" />
+    <source src={addingImage} type="video/mp4" />
 </video>
 
 Пример удаления элементов в таблице:
 
 <video width="600" height="300" controls="controls" loop>
-    <source src="./stories/system/patterns/transition/deleting.mp4" type="video/mp4" />
+    <source src={deletingImage} type="video/mp4" />
 </video>
 
 Пример изменения элементов в таблице:
 
 <video width="600" height="300" controls="controls" loop>
-    <source src="./stories/system/patterns/transition/deleting.mp4" type="video/mp4" />
+    <source src={modifyingImage} type="video/mp4" />
 </video>
 
 Пример вызова модальных окон:
 
 <video width="600" height="300" controls="controls" loop>
-    <source src="./stories/system/patterns/transition/modals.mp4" type="video/mp4" />
+    <source src={modalsImage} type="video/mp4" />
 </video>

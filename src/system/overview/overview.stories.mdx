@@ -7,6 +7,8 @@ import {
     getStoryTitle
 } from 'src/structure';
 
+import {headerImage} from './static';
+
 export const title = getStoryTitle([
     Structure.DESIGN_SYSTEM,
     DesignSystem.OVERVIEW
@@ -19,7 +21,7 @@ export const title = getStoryTitle([
 <br />
 <br />
 
-<img src="./stories/system/overview/header.png" />
+<img src={headerImage} />
 
 С этим набор компонентов, жизнь разработчика станет чуть длиннее (Пушкин А.С.).
 

@@ -8,6 +8,12 @@ import {
     getStoryTitle
 } from 'src/structure';
 
+import {
+    refreshImage,
+    skeletonImage,
+    spinnerImage
+} from './static';
+
 export const title = getStoryTitle([
     Structure.DESIGN_SYSTEM,
     DesignSystem.PATTERNS,
@@ -22,19 +28,19 @@ export const title = getStoryTitle([
 
 Пример спиннера:
 
-<img src="./stories/system/patterns/indicators/spinner.png" width={600} />
+<img src={spinnerImage} width={600} />
 
 <br />
 
 Пример скелетона:
 
-<img src="./stories/system/patterns/indicators/skeleton.png" width={600} />
+<img src={skeletonImage} width={600} />
 
 <br />
 
 Пример с рефрешем (активация по действию):
 
-<img src="./stories/system/patterns/indicators/refresh.png" width={600} />
+<img src={refreshImage} width={600} />
 
 <br />
 

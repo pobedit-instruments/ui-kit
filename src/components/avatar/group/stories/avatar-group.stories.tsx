@@ -2,6 +2,7 @@ import React from 'react';
 import {Story} from '@storybook/react/types-6-0';
 import {UserOutlined, AntDesignOutlined} from '@ant-design/icons';
 
+import {userImage} from './static';
 import {Tooltip} from 'src/components';
 
 import {
@@ -15,7 +16,7 @@ const Template: Story<AvatarProps> = ({...props}): JSX.Element => (
         size="large"
         maxStyle={{color: '#f56a00', backgroundColor: '#fde3cf'}}
     >
-        <Avatar src="./stories/components/avatar/user.png" />
+        <Avatar src={userImage} />
 
         <Avatar style={{backgroundColor: '#f56a00'}}>K</Avatar>
 

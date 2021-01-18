@@ -8,6 +8,15 @@ import {
     getStoryTitle
 } from 'src/structure';
 
+import {
+    buttonsImage,
+    dynamicContrastImage,
+    staticContrastImage,
+    text1Image,
+    text2Image,
+    contrastImage
+} from './static';
+
 export const title = getStoryTitle([
     Structure.DESIGN_SYSTEM,
     DesignSystem.PATTERNS,
@@ -22,13 +31,13 @@ export const title = getStoryTitle([
 
 ## Элементы управления
 
-<img src="./stories/system/patterns/сontrast/сontrast.png" width={600} />
+<img src={contrastImage} width={600} />
 
 <br />
 
 Обратите внимание, что кнопки, которые не подразумевают принятия решений (Применить, Отказаться и синонимичные им названия) не должны выделяться цветом, так же как и не должно быть больше одной главной кнопки.
 
-<img src="./stories/system/patterns/сontrast/buttons.png" width={600} />
+<img src={buttonsImage} width={600} />
 
 ## Типографика
 
@@ -36,19 +45,19 @@ export const title = getStoryTitle([
 
 Пример 1:
 
-<img src="./stories/system/patterns/сontrast/text1.png" width={600} />
+<img src={text1Image} width={600} />
 
 Пример 2:
 
-<img src="./stories/system/patterns/сontrast/text2.png" width={600} />
+<img src={text2Image} width={600} />
 
 ## Состояния
 
 Использование тегов разных цветов:
 
-<img src="./stories/system/patterns/сontrast/static-contrast.png" width={600} />
+<img src={staticContrastImage} width={600} />
 
 Изменение фонового состояния по движению мыши:
 
-<img src="./stories/system/patterns/сontrast/dynamic-contrast.png" width={600} />
+<img src={dynamicContrastImage} width={600} />
 
