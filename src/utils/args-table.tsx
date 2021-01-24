@@ -1,4 +1,4 @@
-import React, {ComponentProps} from 'react';
+import React from 'react';
 
 import {
     Table,
@@ -7,7 +7,7 @@ import {
 
 type TableProps = {
     name: string;
-    dataSource: ComponentProps<typeof Table>['dataSource'];
+    dataSource: React.ComponentProps<typeof Table>['dataSource'];
 };
 
 const render = (html: string): JSX.Element => {

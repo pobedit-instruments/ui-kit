@@ -1,3 +1,12 @@
-const prefix = 'pushkin';
+enum Product {
+    PREFIX = 'pushkin'
+}
 
-export {prefix};
+enum Env {
+    PRODUCTION = 'production'
+}
+
+export {
+    Env,
+    Product
+};

@@ -1,5 +1,6 @@
 import React from 'react';
-import {prefix} from 'src/config';
+import {Product} from 'src/config';
+
 import './pulsar.less';
 
 type PulsarProps = {
@@ -30,14 +31,14 @@ const Pulsar: React.FunctionComponent<PulsarProps> = ({
 
     return (
         <div data-test={displayName}
-             className={`${prefix}-pulsar`}
+             className={`${Product.PREFIX}-pulsar`}
              style={{
                  backgroundColor: color,
                  height: sizeValue,
                  width: sizeValue
              }}
         >
-            <div className={`${prefix}-pulsar__ripple`}
+            <div className={`${Product.PREFIX}-pulsar__ripple`}
                  style={{
                      backgroundColor: color,
                      width: ripple,

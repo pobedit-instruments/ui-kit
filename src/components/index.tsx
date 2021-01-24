@@ -1,3 +1,11 @@
+import {Errors} from 'src/utils/errors';
+import {Env} from 'src/config';
+
+const {NODE_ENV} = process.env;
+
+if (NODE_ENV !== Env.PRODUCTION) {
+    console.warn(Errors.NON_OPTIMIZED_BUILD);
+}
 
 // BASIC ELEMENTS
 export {Button} from './button';
