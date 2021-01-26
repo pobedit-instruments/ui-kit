@@ -1,5 +1,3 @@
-import {Button} from '@pushkin/ui-kit';
-
 import {Env, Errors} from './config';
 
 const {NODE_ENV} = process.env;
