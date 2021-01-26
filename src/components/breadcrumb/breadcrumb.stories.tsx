@@ -25,7 +25,7 @@ import {
     getStoryTitle
 } from 'src/structure';
 
-import {ComponentTable} from 'src/utils/args-table';
+import {Options} from '.storybook/utils/options';
 
 import {dataSource as BreadcrumbArgs} from './breadcrumb/stories/breadcrumb-properties';
 import {dataSource as ItemArgs} from './item/stories/item-properties';
@@ -52,9 +52,9 @@ const controls: Meta<BreadcrumbProps> = {
                     <ArgsTable story={PRIMARY_STORY} />
 
                     <Space size="large" direction="vertical">
-                        <ComponentTable name="Breadcrumb" dataSource={BreadcrumbArgs} />
-                        <ComponentTable name="Breadcrumb.Item" dataSource={ItemArgs} />
-                        <ComponentTable name="Breadcrumb.Separator" dataSource={SeparatorArgs} />
+                        <Options name="Breadcrumb" dataSource={BreadcrumbArgs} />
+                        <Options name="Breadcrumb.Item" dataSource={ItemArgs} />
+                        <Options name="Breadcrumb.Separator" dataSource={SeparatorArgs} />
                     </Space>
                 </>
             ),

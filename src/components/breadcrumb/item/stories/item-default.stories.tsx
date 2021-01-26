@@ -3,8 +3,6 @@ import {Story} from '@storybook/react/types-6-0';
 import {linkTo} from '@storybook/addon-links';
 import dedent from 'ts-dedent';
 
-import {preventClick} from 'src/utils/events';
-
 import {
     BasicElement,
     Component
@@ -57,7 +55,7 @@ const Template: Story<BreadcrumbProps> = ({...props}): JSX.Element => {
             <Item>Главная</Item>
 
             <Item>
-                <a href="#noop" onClick={preventClick}>Раздел</a>
+                <a href="#noop">Раздел</a>
             </Item>
 
             <Item overlay={OverlayMenu}>

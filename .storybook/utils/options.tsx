@@ -14,7 +14,7 @@ const render = (html: string): JSX.Element => {
     return <div dangerouslySetInnerHTML={{__html: html}} />;
 }
 
-const ComponentTable: React.FunctionComponent<TableProps> = ({name, dataSource}): JSX.Element => (
+const Options: React.FunctionComponent<TableProps> = ({name, dataSource}): JSX.Element => (
     <div>
         <Typography.Title level={3}>{name}</Typography.Title>
 
@@ -49,4 +49,4 @@ const ComponentTable: React.FunctionComponent<TableProps> = ({name, dataSource})
     </div>
 );
 
-export {ComponentTable};
+export {Options};

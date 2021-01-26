@@ -28,7 +28,7 @@
 npm-debug.log
 
 # --------------------------
-# Project
+# Tools
 # --------------------------
 
 *.tmlanguage.cache
@@ -37,7 +37,21 @@ npm-debug.log
 *.sublime-workspace
 .idea
 .idea_modules/
-cache
+.eslintcache
+
+# --------------------------
+# Product
+# --------------------------
 
 *.ts
 !*.d.ts
+
+/.storybook
+/src
+/docs
+/cache
+/tests
+/types
+/TODO.md
+/tsconfig.json
+/.travis.yml

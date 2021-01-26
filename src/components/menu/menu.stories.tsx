@@ -25,7 +25,7 @@ import {
     getStoryTitle
 } from 'src/structure';
 
-import {ComponentTable} from 'src/utils/args-table';
+import {Options} from '.storybook/utils/options';
 import {dataSource as menuArgs} from './menu/stories/menu-properties';
 
 const controls: Meta<MenuProps> = {
@@ -49,7 +49,7 @@ const controls: Meta<MenuProps> = {
                     <ArgsTable story={PRIMARY_STORY} />
 
                     <Space size="large" direction="vertical">
-                        <ComponentTable name="Menu" dataSource={menuArgs} />
+                        <Options name="Menu" dataSource={menuArgs} />
                     </Space>
                 </>
             ),

@@ -8,17 +8,28 @@
         "type": "git",
         "url": "git@github.com:pobedit-instruments/ui-kit.git"
     },
-    "main": "index.js",
+    "main": "./build/index.js",
+    "exports": {
+        "./": "./build/components"
+    },
+    "config": {
+        "root": "./build"
+    },
     "scripts": {
         "test": "react-scripts test --env=jsdom",
+        "test:publish": "npm run build && npm pack",
+        "test:install": "npm run test:publish && npm install pushkin-ui-kit-$npm_package_version.tgz",
         "start": "react-scripts start",
         "eject": "react-scripts eject",
-        "build": "react-scripts build",
+        "build": "npm run clean && npm run tsc && npm run copy-less",
+        "build:test": "",
+        "clean": "rm -rf ./$npm_package_config_root pushkin-ui-kit-$npm_package_version.tgz",
+        "copy-less": "cpy --parents --cwd=src '**/*.less' '!**/*.stories.less' ../$npm_package_config_root",
         "storybook": "start-storybook -s ./public -p 6006",
         "storybook:build": "build-storybook -s ./public",
-        "storybook:deploy": "storybook-to-ghpages -- --out=.build",
+        "storybook:deploy": "storybook-to-ghpages -- --out=../$npm_package_config_root",
         "storybook:update": "npx sb upgrade",
-        "tsc": "tsc --noEmit"
+        "tsc": "tsc --outDir ./$npm_package_config_root"
     },
     "browserslist": {
         "production": [
@@ -69,6 +80,9 @@
     },
     "dependencies": {
         "@ant-design/colors": "4.0.5",
-        "antd-img-crop": "3.13.2"
+        "@pushkin/ui-kit": "file:pushkin-ui-kit-0.0.1.tgz",
+        "antd-img-crop": "3.13.2",
+        "copyfiles": "^2.4.1",
+        "cpy-cli": "^3.1.1"
     }
 }

@@ -23,7 +23,7 @@ import {
     getStoryTitle
 } from 'src/structure';
 
-// import {ComponentTable} from 'src/utils/args-table';
+// import {Options} from 'src/utils/options';
 // import {dataSource as DropdownArgs} from '../stories/dropdown-properties';
 // import {dataSource as ButtonArgs} from '../../button/stories/button-properties';
 
@@ -47,8 +47,8 @@ const controls: Meta<StepsProps> = {
                     <ArgsTable story={PRIMARY_STORY} />
 
                     {/*<Space size="large" direction="vertical">*/}
-                    {/*    <ComponentTable name="Dropdown" dataSource={DropdownArgs} />*/}
-                    {/*    <ComponentTable name="Breadcrumb.Button" dataSource={ButtonArgs} />*/}
+                    {/*    <Options name="Dropdown" dataSource={DropdownArgs} />*/}
+                    {/*    <Options name="Breadcrumb.Button" dataSource={ButtonArgs} />*/}
                     {/*</Space>*/}
                 </>
             ),

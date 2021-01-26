@@ -24,7 +24,7 @@ import {
     getStoryTitle
 } from 'src/structure';
 
-import {ComponentTable} from 'src/utils/args-table';
+import {Options} from '.storybook/utils/options';
 
 import {dataSource as siderArgs} from './sider/stories/sider-table';
 import {dataSource as layoutArgs} from './layout/strories/layout-properties';
@@ -48,8 +48,8 @@ const controls: Meta<LayoutProps> = {
                     <ArgsTable story={PRIMARY_STORY} />
 
                     <Space size="large" direction="vertical">
-                        <ComponentTable name="Layout" dataSource={layoutArgs} />
-                        <ComponentTable name="Sider" dataSource={siderArgs} />
+                        <Options name="Layout" dataSource={layoutArgs} />
+                        <Options name="Sider" dataSource={siderArgs} />
                     </Space>
                 </>
             ),

@@ -32,7 +32,7 @@ const Pulsar: React.FunctionComponent<PulsarProps> = ({
     ...props
 }) => {
     const {getPrefixCls} = React.useContext<ConfigConsumerProps>(ConfigContext);
-    const className = getPrefixCls(Product.PREFIX, prefixCls);
+    const className = getPrefixCls(Product.NAME, prefixCls);
 
     const sizeValue = sizeType[size] || size as number;
     const ripple = sizeValue * 3;

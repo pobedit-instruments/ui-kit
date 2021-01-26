@@ -1,30 +1,33 @@
 {
-    "compilerOptions": {
-        "lib": [
-            "es2017",
-            "dom"
-        ],
-        "baseUrl": ".",
-        "target": "es2017",
-        "module": "esnext",
-        "moduleResolution": "node",
-        "strict": true,
-        "declaration": true,
-        "sourceMap": true,
-        "experimentalDecorators": true,
-        "forceConsistentCasingInFileNames": true,
-        "allowSyntheticDefaultImports": true,
-        "jsx": "react",
-        "allowJs": true,
-        "skipLibCheck": true,
-        "esModuleInterop": true,
-        "resolveJsonModule": true,
-        "isolatedModules": true,
-        "noEmit": true
-    },
-    "include": [
-        "src",
-        "tests",
-        "types"
-    ]
+  "compilerOptions": {
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "baseUrl": ".",
+    "target": "ES2017",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "declaration": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": false,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "include": [
+    "./src",
+    "./types"
+  ],
+  "exclude": [
+    "./src/**/*/stories",
+    "./src/**/*.stories.*",
+    "./src/structure.ts"
+  ]
 }

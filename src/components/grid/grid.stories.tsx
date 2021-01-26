@@ -25,7 +25,7 @@ import {
     getStoryTitle
 } from 'src/structure';
 
-import {ComponentTable} from 'src/utils/args-table';
+import {Options} from '.storybook/utils/options';
 
 import {dataSource as rowArgs} from './row/stories/row-properties';
 import {dataSource as colArgs} from './column/stories/column-properties';
@@ -54,9 +54,9 @@ const controls: Meta<GridRowProps> = {
                     <ArgsTable story={PRIMARY_STORY} />
 
                     <Space size="large" direction="vertical">
-                        <ComponentTable name="Grid" dataSource={gridArgs} />
-                        <ComponentTable name="Row" dataSource={rowArgs} />
-                        <ComponentTable name="Col" dataSource={colArgs} />
+                        <Options name="Grid" dataSource={gridArgs} />
+                        <Options name="Row" dataSource={rowArgs} />
+                        <Options name="Col" dataSource={colArgs} />
                     </Space>
                 </>
             ),

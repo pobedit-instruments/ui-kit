@@ -1,7 +1,7 @@
 import React from 'react';
 import {Meta} from '@storybook/react/types-6-0';
 import dedent from 'ts-dedent';
-import {name} from 'package.json';
+import {Product} from 'src/config';
 
 import {
     Title,
@@ -41,12 +41,6 @@ const controls: Meta<IconProps> = {
                     <Primary />
                     <ArgsTable story={PRIMARY_STORY} />
                     <Stories />
-
-                    Чтобы использовать представленные ниже иконки — установите пакет <a href="https://www.npmjs.com/package/@ant-design/icons">@ant-design/icons</a>
-
-                    <br />
-                    <br />
-
                     <Preview />
                 </>
             ),
@@ -55,7 +49,7 @@ const controls: Meta<IconProps> = {
                 code: dedent`
                     import React from 'react';
                     import {AppleOutlined} from '@ant-design/icons';
-                    import {Icon} from '${name}';
+                    import {Icon} from '@${Product.NAME}/ui-kit';
 
                     const AppleIcon: React.FunctionComponent<Props> = (): JSX.Element => (
                         <Icon component={AppleOutlined} />
